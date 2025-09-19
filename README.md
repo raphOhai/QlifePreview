@@ -1,6 +1,6 @@
-# Qlife App
+# QLife Family Clinic
 
-A modern Next.js application built with the latest web development technologies.
+A modern Next.js application for QLife Family Clinic website built with the latest web development technologies.
 
 ## 🚀 Tech Stack
 
@@ -15,9 +15,14 @@ A modern Next.js application built with the latest web development technologies.
 
 - ✅ Server-side rendering with Next.js App Router
 - ✅ TypeScript for type safety
-- ✅ Tailwind CSS for styling with dark mode support
+- ✅ Tailwind CSS for styling with custom primary color
 - ✅ React Query for data fetching and caching
 - ✅ shadcn/ui components (Button, Card included)
+- ✅ Instrument Sans font from Google Fonts
+- ✅ Hornbill font setup for hero headings
+- ✅ Hero section with optimized WebP background images
+- ✅ Responsive design with width constraints
+- ✅ Image optimization script for WebP conversion
 - ✅ ESLint configuration
 - ✅ Import aliases configured (@/*)
 
@@ -69,7 +74,12 @@ src/
 │   ├── layout.tsx      # Root layout
 │   └── page.tsx        # Home page
 ├── components/         # React components
-│   └── ui/            # shadcn/ui components
+│   ├── ui/            # shadcn/ui components
+│   ├── Header.tsx     # Site header with navigation
+│   ├── Footer.tsx     # Site footer
+│   └── RootLayout.tsx # Main layout wrapper
+├── pageComponents/     # Page-specific components
+│   └── home/          # Home page components
 ├── lib/               # Utility functions
 │   └── utils.ts       # shadcn/ui utils
 └── providers/         # React providers
@@ -80,9 +90,9 @@ src/
 
 This project uses Tailwind CSS with custom CSS variables for theming. The color palette and styling system is configured through:
 
-- `tailwind.config.ts` - Tailwind configuration
 - `src/app/globals.css` - Global styles and CSS variables
 - `components.json` - shadcn/ui configuration
+- Custom primary color: `oklch(27% 36% 264deg)` (blue)
 
 ## 📊 Data Fetching
 
@@ -104,15 +114,15 @@ function MyComponent() {
 }
 ```
 
-## 🌙 Dark Mode
+## 🖼️ Image Optimization
 
-Dark mode is supported out of the box with Tailwind CSS. Use the `dark:` prefix for dark mode styles:
+The project includes an automated WebP conversion script:
 
-```tsx
-<div className="bg-white dark:bg-gray-900 text-gray-900 dark:text-white">
-  Content that adapts to dark mode
-</div>
+```bash
+node imgaToWebp.js
 ```
+
+This converts all images in the `public` folder to optimized WebP format while preserving originals.
 
 ## 🚀 Deployment
 
@@ -121,7 +131,6 @@ This project can be deployed on any platform that supports Next.js:
 - **Vercel** (recommended): Connect your GitHub repository
 - **Netlify**: Use the Next.js build plugin
 - **Railway**: Deploy with zero configuration
-- **Docker**: Use the included Dockerfile (if added)
 
 ## 📝 License
 
