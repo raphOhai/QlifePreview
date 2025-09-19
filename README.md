@@ -1,36 +1,132 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Qlife App
 
-## Getting Started
+A modern Next.js application built with the latest web development technologies.
 
-First, run the development server:
+## 🚀 Tech Stack
+
+- **Next.js 15** - React framework with App Router
+- **TypeScript** - Type-safe JavaScript
+- **Tailwind CSS** - Utility-first CSS framework
+- **React Query (TanStack Query)** - Powerful data synchronization
+- **shadcn/ui** - Beautiful, accessible React components
+- **ESLint** - Code linting and formatting
+
+## 🛠️ Features
+
+- ✅ Server-side rendering with Next.js App Router
+- ✅ TypeScript for type safety
+- ✅ Tailwind CSS for styling with dark mode support
+- ✅ React Query for data fetching and caching
+- ✅ shadcn/ui components (Button, Card included)
+- ✅ ESLint configuration
+- ✅ Import aliases configured (@/*)
+
+## 🏃‍♂️ Getting Started
+
+### Prerequisites
+
+- Node.js 18+ 
+- npm or yarn
+
+### Installation
+
+The project is already set up! Just run:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 📦 Available Scripts
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- `npm run dev` - Start development server
+- `npm run build` - Build for production
+- `npm run start` - Start production server
+- `npm run lint` - Run ESLint
 
-## Learn More
+## 🧩 Adding shadcn/ui Components
 
-To learn more about Next.js, take a look at the following resources:
+To add more shadcn/ui components:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```bash
+npx shadcn@latest add [component-name]
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Example:
+```bash
+npx shadcn@latest add input
+npx shadcn@latest add dialog
+npx shadcn@latest add form
+```
 
-## Deploy on Vercel
+## 📁 Project Structure
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+```
+src/
+├── app/                 # Next.js App Router
+│   ├── globals.css     # Global styles
+│   ├── layout.tsx      # Root layout
+│   └── page.tsx        # Home page
+├── components/         # React components
+│   └── ui/            # shadcn/ui components
+├── lib/               # Utility functions
+│   └── utils.ts       # shadcn/ui utils
+└── providers/         # React providers
+    └── query-provider.tsx # React Query provider
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 🎨 Styling
+
+This project uses Tailwind CSS with custom CSS variables for theming. The color palette and styling system is configured through:
+
+- `tailwind.config.ts` - Tailwind configuration
+- `src/app/globals.css` - Global styles and CSS variables
+- `components.json` - shadcn/ui configuration
+
+## 📊 Data Fetching
+
+React Query is configured and ready to use. Example usage:
+
+```tsx
+import { useQuery } from '@tanstack/react-query'
+
+function MyComponent() {
+  const { data, isLoading, error } = useQuery({
+    queryKey: ['my-data'],
+    queryFn: () => fetch('/api/data').then(res => res.json()),
+  })
+
+  if (isLoading) return <div>Loading...</div>
+  if (error) return <div>Error: {error.message}</div>
+  
+  return <div>{data}</div>
+}
+```
+
+## 🌙 Dark Mode
+
+Dark mode is supported out of the box with Tailwind CSS. Use the `dark:` prefix for dark mode styles:
+
+```tsx
+<div className="bg-white dark:bg-gray-900 text-gray-900 dark:text-white">
+  Content that adapts to dark mode
+</div>
+```
+
+## 🚀 Deployment
+
+This project can be deployed on any platform that supports Next.js:
+
+- **Vercel** (recommended): Connect your GitHub repository
+- **Netlify**: Use the Next.js build plugin
+- **Railway**: Deploy with zero configuration
+- **Docker**: Use the included Dockerfile (if added)
+
+## 📝 License
+
+This project is open source and available under the [MIT License](LICENSE).
+
+## 🤝 Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
