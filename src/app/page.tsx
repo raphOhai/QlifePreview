@@ -5,6 +5,12 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Hero } from '@/pageComponents/home/Hero'
 import { Section2 } from '@/pageComponents/home/Section2'
+import Section3 from '@/pageComponents/home/Section3'
+import { Section4 } from '@/pageComponents/home/Section4'
+import { Section5 } from '@/pageComponents/home/Section5'
+import { Section6 } from '@/pageComponents/home/Section6'
+import { CTA } from '@/pageComponents/home/CTA'
+
 
 // Demo API function
 const fetchExample = async () => {
@@ -25,6 +31,11 @@ export default function Home() {
     <div className="min-h-screen ">
       <Hero />
       <Section2 />
+      <Section3 />
+      <Section4 />
+      <Section5 />
+      <Section6 />
+      <CTA />
     </div>
   )
 }
