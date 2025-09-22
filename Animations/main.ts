@@ -1,6 +1,18 @@
 import { gsap } from "gsap";
 import { IO } from "./observe";
 
+// Fallback function to show elements if animations fail to load
+export const showAnimationElements = () => {
+    if (typeof window === 'undefined' || typeof document === 'undefined') {
+        return;
+    }
+    
+    const hiddenElements = document.querySelectorAll('[data-animation]:not([data-animation-ready="true"])');
+    const hiddenGroupItems = document.querySelectorAll('[data-fade-group-item]:not([data-animation-ready="true"])');
+    
+    hiddenElements.forEach(el => el.setAttribute('data-animation-ready', 'true'));
+    hiddenGroupItems.forEach(el => el.setAttribute('data-animation-ready', 'true'));
+};
 
 // Don't forget to add the attributes and remove later
 
@@ -31,6 +43,25 @@ export const animate = () => {
     const fadeRight: NodeListOf<HTMLElement> = document.querySelectorAll("[data-animation='fade-right']");
     const fadeG: NodeListOf<HTMLElement> = document.querySelectorAll("[data-fade-group]");
     const fadeB: NodeListOf<HTMLElement> = document.querySelectorAll("[data-animation='fade-bottom']");
+
+    // Mark all elements as animation-ready to show them
+    const markAsReady = (elements: NodeListOf<HTMLElement>) => {
+        elements.forEach(el => el.setAttribute('data-animation-ready', 'true'));
+    };
+    
+    markAsReady(maskTop);
+    markAsReady(maskLeft);
+    markAsReady(maskRight);
+    markAsReady(fadeIn);
+    markAsReady(fadeLeft);
+    markAsReady(fadeRight);
+    markAsReady(fadeB);
+    
+    // Mark fade group items as ready
+    fadeG.forEach(group => {
+        const items = group.querySelectorAll('[data-fade-group-item]') as NodeListOf<HTMLElement>;
+        markAsReady(items);
+    });
 
     maskTop.forEach((item: Element) => {
         const image = item.querySelector("img") as HTMLImageElement;
@@ -160,6 +191,17 @@ export const textAnimate = () => {
     const opacIn = document.querySelectorAll("[data-animation='opacIn']");
     const H = document.querySelectorAll("[data-animation='h']");
     const B = document.querySelectorAll("[data-animation='bounce']");
+
+    // Mark all text elements as animation-ready to show them
+    const markAsReady = (elements: NodeListOf<Element>) => {
+        elements.forEach(el => el.setAttribute('data-animation-ready', 'true'));
+    };
+    
+    markAsReady(blurredText);
+    markAsReady(p);
+    markAsReady(opacIn);
+    markAsReady(H);
+    markAsReady(B);
 
     blurredText.forEach((item) => {
         gsap.set(item.querySelectorAll(".word"), {

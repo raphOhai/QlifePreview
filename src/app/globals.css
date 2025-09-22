@@ -144,3 +144,40 @@
 [data-animation="bounce"] .char {
   will-change: transform, opacity;
 }
+
+/* Hide animated elements by default to prevent FOUC (Flash of Unstyled Content) */
+[data-animation]:not([data-animation-ready="true"]) {
+  opacity: 0;
+}
+
+/* Specific visibility rules for different animation types */
+[data-animation="fade"]:not([data-animation-ready="true"]),
+[data-animation="fade-left"]:not([data-animation-ready="true"]),
+[data-animation="fade-right"]:not([data-animation-ready="true"]),
+[data-animation="fade-bottom"]:not([data-animation-ready="true"]),
+[data-animation="bounce"]:not([data-animation-ready="true"]),
+[data-animation="h"]:not([data-animation-ready="true"]),
+[data-animation="p"]:not([data-animation-ready="true"]),
+[data-animation="blurIn"]:not([data-animation-ready="true"]),
+[data-animation="opacIn"]:not([data-animation-ready="true"]) {
+  opacity: 0;
+  visibility: hidden;
+}
+
+/* Fade group items */
+[data-fade-group-item]:not([data-animation-ready="true"]) {
+  opacity: 0;
+  visibility: hidden;
+}
+
+/* Smooth transition when elements become visible */
+[data-animation-ready="true"] {
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 0.3s ease-out, visibility 0.3s ease-out;
+}
+
+/* Mask elements */
+[data-mask]:not([data-animation-ready="true"]) {
+  overflow: hidden;
+}

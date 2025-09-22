@@ -9,7 +9,7 @@ export const Header = () => {
     const initAnimations = async () => {
       if (typeof window === 'undefined') return;
       
-      const [{ split }, { animate, reset, textAnimate }] = await Promise.all([
+      const [{ split }, { animate, reset, textAnimate, showAnimationElements }] = await Promise.all([
         import('../../Animations/split'),
         import('../../Animations/main')
       ]);
@@ -36,10 +36,23 @@ export const Header = () => {
     let cleanup: (() => void) | undefined;
     initAnimations().then((cleanupFn) => {
       cleanup = cleanupFn;
+    }).catch(() => {
+      // Fallback: Show elements if animation loading fails
+      import('../../Animations/main').then(({ showAnimationElements }) => {
+        showAnimationElements();
+      });
     });
+
+    // Fallback timeout: Show elements if animations don't load within 2 seconds
+    const fallbackTimer = setTimeout(() => {
+      import('../../Animations/main').then(({ showAnimationElements }) => {
+        showAnimationElements();
+      });
+    }, 2000);
 
     // Cleanup on unmount
     return () => {
+      clearTimeout(fallbackTimer);
       if (cleanup) cleanup();
     };
   }, []);         

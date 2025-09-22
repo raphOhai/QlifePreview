@@ -20,7 +20,7 @@ const Section1 = () => {
         <div className='border-b-[2px] border-[#FFF16F]'>
             <div className='flex flex-col gap-4 w-1/2 pb-20'>
                 <h1 className='text-[#0B0A0B] font-weight-[500] ' data-animation="h">Services</h1>
-                <p className='text-[48px] font-weight-[400] leading-[56px] font-hornbill text-[#00186B] opacity-0' data-animation="bounce" data-split="false">
+                <p className='text-[48px] font-weight-[400] leading-[56px] font-hornbill text-[#00186B] ' data-animation="bounce" data-split="false">
                     QLife General Clinic.
                     Comprehensive care safeguarding your everyday medical needs.
                 </p>
