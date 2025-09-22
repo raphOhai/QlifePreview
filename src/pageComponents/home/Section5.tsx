@@ -10,11 +10,11 @@ export const Section5 = () => {
             </h1>
             <div className='grid grid-cols-12 gap-4'>
                 <div className='col-span-6'>
-                    <div className='flex flex-col gap-4'>
-                        <h1 className='text-[#00186B] text-[40px] font-weight-[400] leading-[56px]'>
+                    <div className='flex flex-col gap-4'  data-fade-group>
+                        <h1 className='text-[#00186B] text-[40px] font-weight-[400] leading-[56px]' data-fade-group-item>
                             The first step towards a healthy life is to schedule an appointment.
                         </h1>
-                        <div className='flex justify-start'>
+                        <div className='flex justify-start' data-fade-group-item>
                             <Button className='p-[25px] rounded-[30px] '>
                                 Book an appointment
                             </Button>

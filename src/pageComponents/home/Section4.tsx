@@ -28,7 +28,7 @@ export const Section4 = () => {
                 </div>
             </div>
 
-            <div className='grid grid-cols-12 gap-4  mt-10'>
+            <div className='grid grid-cols-12 gap-4  mt-10 ' >
                 <div className='col-span-4'>
                     <Cards image='/home/section4/1.webp' title='QLife General Clinic' description='We provide essential health advice, vaccinations, and preventive treatments tailored for your international travels.' />
                 </div>

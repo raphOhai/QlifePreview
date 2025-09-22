@@ -133,3 +133,14 @@
     @apply bg-background text-foreground;
   }
 }
+
+/* Animation styles for split text */
+.char,
+.word,
+.word_wrap {
+  display: inline-block;
+}
+
+[data-animation="bounce"] .char {
+  will-change: transform, opacity;
+}

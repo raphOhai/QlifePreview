@@ -23,21 +23,13 @@ const Section3 = () => {
                     </div>
                 </div>
 
-
-
-
-
-
             </div>
 
             <div className='relative px-[48px] py-[96px] border-b border-[#F0F0F0] h-[400px]'>
                 <div className='absolute bottom-0 right-0'>
                     <Art1 />
                 </div>
-
             </div>
-
-
         </div>
 
     )
@@ -63,7 +55,7 @@ const Cards = ({ svg, title, description }: { svg: number, title: string, descri
         </g>
     </svg>)
     return (
-        <div className='p-[32px] rounded-[8px] border border-[#F0F0F0] flex flex-col gap-4'>
+        <div className='p-[32px] rounded-[8px] border border-[#F0F0F0] flex flex-col gap-4' data-animation="fade" data-split="false" >
             <div className='bg-[#F0F0F0] rounded-full p-4 w-[60px] h-[60px] flex items-center justify-center'>
                 {svg === 1 && svg_1}
                 {svg === 2 && svg_2}

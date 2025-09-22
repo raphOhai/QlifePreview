@@ -4,7 +4,7 @@ export const Section2 = () => {
     return (
         <div className='bg-primary p-4 py-[96px] px-[48px] flex flex-col gap-20'>
             <div className='flex flex-col gap-4 w-1/2'>
-                <h1 className='text-[#FFF16F] text-[48px] font-weight-[400] leading-[56px]'>
+                <h1 className='text-[#FFF16F] text-[48px] font-weight-[400] leading-[56px]' data-animation="bounce" data-split="false" >
                     We provide prompt and efficient world-class health care services that our clients deserve.
                 </h1>
 
@@ -22,8 +22,8 @@ export const Section2 = () => {
 
 const Section2Content = () => {
     return (
-        <div className='grid grid-cols-12 gap-4'>
-            <div className='col-span-4'>
+        <div className='grid grid-cols-12 gap-4' data-fade-group>
+            <div className='col-span-4' data-fade-group-item>
                 <div className="flex flex-col gap-2">
                     <h1 className='text-white text-[48px] font-weight-[400] leading-[56px]'>
                         80%
@@ -41,7 +41,7 @@ const Section2Content = () => {
                     </div>
                 </div>
             </div>
-            <div className='col-span-4'>
+            <div className='col-span-4' data-fade-group-item>
                 <div className="flex flex-col gap-2">
                     <h1 className='text-white text-[48px] font-weight-[400] leading-[56px]'>
                         80%
@@ -59,7 +59,7 @@ const Section2Content = () => {
                     </div>
                 </div>
             </div>
-            <div className='col-span-4'>
+            <div className='col-span-4' data-fade-group-item>
                         <div className="flex flex-col gap-2">
                     <h1 className='text-white text-[48px] font-weight-[400] leading-[56px]'>
                         80%

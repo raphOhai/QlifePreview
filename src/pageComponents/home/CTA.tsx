@@ -3,7 +3,7 @@ import React from 'react'
 export const CTA = () => {
   return (
     <div className='flex justify-center items-center flex-col gap-4  py-[120px] px-[200px]'>
-      <h1 className='text-[#00186B] text-[48px] font-weight-[400] leading-[56px] font-hornbill'>
+      <h1 className='text-[#00186B] text-[48px] font-weight-[400] leading-[56px] font-hornbill ' data-animation="opacIn"  data-split="false" >
         Ready to take charge of your health?
       </h1>
       <p className='text-[#0B0A0B] text-[16px] font-weight-[400] leading-[24px] text-center max-w-[950px]'>

@@ -41,6 +41,5 @@ export const FooterArt2 = () => {
             <rect x="225" y="112" width="76" height="8" fill="#F8F4EB" />
             <circle cx="315" cy="116" r="13" stroke="#F8F4EB" stroke-width="6" />
         </svg>
-
     )
 }

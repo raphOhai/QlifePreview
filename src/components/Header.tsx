@@ -1,8 +1,30 @@
-import React from 'react'
+'use client'
+import React, { useEffect } from 'react'
 import Image from 'next/image'
 import { Button } from './ui/button'
+import { split } from '../../Animations/split';
+import { animate, reset, textAnimate } from '../../Animations/main';
 
 export const Header = () => {
+  useEffect(() => {
+    // Small delay to ensure DOM is ready
+    const timer = setTimeout(() => {
+        // Initialize text splitting
+        split();
+
+        // Start animations with a small delay after splitting
+        setTimeout(() => {
+            animate();
+            textAnimate();
+        }, 100);
+    }, 100);
+
+    // Cleanup on unmount
+    return () => {
+        clearTimeout(timer);
+        reset();
+    };
+  }, []);         
   return (
     <div className='flex flex-col'>
       <Banner />

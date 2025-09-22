@@ -1,7 +1,13 @@
 import { Button } from '@/components/ui/button'
 import React from 'react'
+import { reset } from '../../../Animations/main';
+import { split } from '../../../Animations/split';
+import { animate } from '../../../Animations/main';
+import { textAnimate } from '../../../Animations/main';
+import { useEffect } from 'react';
 
 export const Hero = () => {
+ 
     return (
         <div
             className='min-h-[90vh] bg-cover bg-center bg-no-repeat relative overflow-hidden '
@@ -39,7 +45,7 @@ const HeroContent = () => {
                     </div>
                     <div className='col-span-6'>
                         <div className='flex flex-col gap-4'>
-                            <h1 className='text-white'>
+                            <h1 className='text-white' >
                                 Experience healthcare as it should be. We offer prompt, patient-centered care in a warm, tranquil environment, aligning with global standards.
                             </h1>
                             <p className='text-white'>
