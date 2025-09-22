@@ -49,10 +49,10 @@ export const FAQ = () => {
 
                 <div className='flex flex-col gap-7'>
                     <h1 className='text-[#00186B] text-[40px] font-weight-[500] leading-[54px]'>
-                        Have any questions? We got you. Check out some of our FAQ's
+                        Have any questions? We got you. Check out some of our FAQ&apos;s
                     </h1>
                     <p className='text-[#0B0A0B] text-[16px] font-weight-[400]'>
-                        Curious to learn more about healthcare that combines personalized attention with clinical excellence? We have the answers to our customers' frequently asked questions here.
+                        Curious to learn more about healthcare that combines personalized attention with clinical excellence? We have the answers to our customers&apos; frequently asked questions here.
                     </p>
 
                 </div>
