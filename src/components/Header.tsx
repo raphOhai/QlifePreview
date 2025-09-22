@@ -2,27 +2,45 @@
 import React, { useEffect } from 'react'
 import Image from 'next/image'
 import { Button } from './ui/button'
-import { split } from '../../Animations/split';
-import { animate, reset, textAnimate } from '../../Animations/main';
 
 export const Header = () => {
   useEffect(() => {
-    // Small delay to ensure DOM is ready
-    const timer = setTimeout(() => {
-        // Initialize text splitting
-        split();
+    // Dynamic imports to avoid SSR issues
+    const initAnimations = async () => {
+      if (typeof window === 'undefined') return;
+      
+      const [{ split }, { animate, reset, textAnimate }] = await Promise.all([
+        import('../../Animations/split'),
+        import('../../Animations/main')
+      ]);
 
-        // Start animations with a small delay after splitting
-        setTimeout(() => {
-            animate();
-            textAnimate();
-        }, 100);
-    }, 100);
+      // Small delay to ensure DOM is ready
+      const timer = setTimeout(() => {
+          // Initialize text splitting
+          split();
+
+          // Start animations with a small delay after splitting
+          setTimeout(() => {
+              animate();
+              textAnimate();
+          }, 100);
+      }, 100);
+
+      // Cleanup function
+      return () => {
+          clearTimeout(timer);
+          reset();
+      };
+    };
+
+    let cleanup: (() => void) | undefined;
+    initAnimations().then((cleanupFn) => {
+      cleanup = cleanupFn;
+    });
 
     // Cleanup on unmount
     return () => {
-        clearTimeout(timer);
-        reset();
+      if (cleanup) cleanup();
     };
   }, []);         
   return (

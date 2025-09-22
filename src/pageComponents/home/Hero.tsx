@@ -1,10 +1,5 @@
 import { Button } from '@/components/ui/button'
 import React from 'react'
-import { reset } from '../../../Animations/main';
-import { split } from '../../../Animations/split';
-import { animate } from '../../../Animations/main';
-import { textAnimate } from '../../../Animations/main';
-import { useEffect } from 'react';
 
 export const Hero = () => {
  
