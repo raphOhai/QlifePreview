@@ -72,7 +72,7 @@ async function convertToWebP(inputPath, outputPath, quality = 80) {
 async function convertImagesToWebP(options = {}) {
     const {
         quality = 80,
-        keepOriginals = true,
+        keepOriginals = false,
         publicDir = './public'
     } = options;
     

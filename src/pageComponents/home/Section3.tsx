@@ -3,35 +3,36 @@ import { Art1 } from '../svgs/art1'
 
 const Section3 = () => {
     return (
-
         <div className='flex flex-col gap-4 relative'>
-            <div className="grid grid-cols-12 gap-9 py-[96px] px-[48px] relative pb-[50px]">
-                <div className="col-span-6">
-                    <div className='flex flex-col gap-4'>
-                        <h1>The Q-Life Edge</h1>
-                        <h2 className='text-[40px] font-weight-[400] leading-[56px] text-[#00186B]'>Committed to unrivalled and exceptional patient-centred care that meets modern healthcare excellence.</h2>
-                        <p className='text-[16px] font-weight-[400] leading-[24px]'>
-                            Our design philosophy isn’t just about aesthetics; it’s about creating meaningful connections between your brand and your customers. That’s why, beyond delivering world-class.
-                        </p>
+            <div className="py-[96px] px-[48px] relative pb-[50px]">
+                <div className="max-w-[1920px] mx-auto grid grid-cols-12 gap-9">
+                    <div className="col-span-6">
+                        <div className='flex flex-col gap-4'>
+                            <h1>The Q-Life Edge</h1>
+                            <h2 className='text-[40px] font-weight-[400] leading-[56px] text-[#00186B]'>Committed to unrivalled and exceptional patient-centred care that meets modern healthcare excellence.</h2>
+                            <p className='text-[16px] font-weight-[400] leading-[24px]'>
+                                Our design philosophy isn&apos;t just about aesthetics; it&apos;s about creating meaningful connections between your brand and your customers. That&apos;s why, beyond delivering world-class.
+                            </p>
+                        </div>
+                    </div>
+                    <div className="col-span-6">
+                        <div className='flex flex-col gap-4'>
+                            <Cards svg={1} title="Our Culture" description="When you need care, we act quickly and carefully. From accurate diagnoses to personalized treatment plans, we provide you the care and support you need to restore your health quickly and safely." />
+                            <Cards svg={2} title="Our Culture" description="When you need care, we act quickly and carefully. From accurate diagnoses to personalized treatment plans, we provide you the care and support you need to restore your health quickly and safely." />
+                            <Cards svg={3} title="Our Culture" description="When you need care, we act quickly and carefully. From accurate diagnoses to personalized treatment plans, we provide you the care and support you need to restore your health quickly and safely." />
+                        </div>
                     </div>
                 </div>
-                <div className="col-span-6">
-                    <div className='flex flex-col gap-4'>
-                        <Cards svg={1} title="Our Culture" description="When you need care, we act quickly and carefully. From accurate diagnoses to personalized treatment plans, we provide you the care and support you need to restore your health quickly and safely." />
-                        <Cards svg={2} title="Our Culture" description="When you need care, we act quickly and carefully. From accurate diagnoses to personalized treatment plans, we provide you the care and support you need to restore your health quickly and safely." />
-                        <Cards svg={3} title="Our Culture" description="When you need care, we act quickly and carefully. From accurate diagnoses to personalized treatment plans, we provide you the care and support you need to restore your health quickly and safely." />
-                    </div>
-                </div>
-
             </div>
 
             <div className='relative px-[48px] py-[96px] border-b border-[#F0F0F0] h-[400px]'>
-                <div className='absolute bottom-0 right-0'>
-                    <Art1 />
+                <div className='max-w-[1920px] mx-auto relative h-full'>
+                    <div className='absolute bottom-0 right-0'>
+                        <Art1 />
+                    </div>
                 </div>
             </div>
         </div>
-
     )
 }
 

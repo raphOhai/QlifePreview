@@ -2,19 +2,21 @@ import React from 'react'
 
 export const Section2 = () => {
     return (
-        <div className='bg-primary p-4 py-[96px] px-[48px] flex flex-col gap-20'>
-            <div className='flex flex-col gap-4 w-1/2'>
-                <h1 className='text-[#FFF16F] text-[48px] font-weight-[400] leading-[56px]' data-animation="bounce" data-split="false" >
-                    We provide prompt and efficient world-class health care services that our clients deserve.
-                </h1>
+        <div className='bg-primary p-4 py-[96px] px-[48px]'>
+            <div className='max-w-[1920px] mx-auto flex flex-col gap-20'>
+                <div className='flex flex-col gap-4 w-1/2'>
+                    <h1 className='text-[#FFF16F] text-[48px] font-weight-[400] leading-[56px]' data-animation="bounce" data-split="false" >
+                        We provide prompt and efficient world-class health care services that our clients deserve.
+                    </h1>
 
-                <p className='text-white text-[16px] font-weight-[400] leading-[24px]'>
-                    The primary should be the first point of contact with the health care services. We work with you to ensure credibility and accountability into the delivery of health care.
-                </p>
+                    <p className='text-white text-[16px] font-weight-[400] leading-[24px]'>
+                        The primary should be the first point of contact with the health care services. We work with you to ensure credibility and accountability into the delivery of health care.
+                    </p>
 
-       
+           
+                </div>
+                <Section2Content />
             </div>
-            <Section2Content />
         </div>
     )
 }
