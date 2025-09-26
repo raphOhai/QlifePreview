@@ -80,17 +80,13 @@ const Cards = ({ image, title, description, name, date }: { image: string, title
 
 
                 <div className='flex items-center gap-2'>
-
                     <p className='text-[#707070] text-[14px] font-weight-[400] leading-[24px]'>
                         {name}
                     </p>
-
                     {seperator}
                     <p className='text-[#707070] text-[14px] font-weight-[400] leading-[24px]'>
                         {date}
                     </p>
-
-
                 </div>
             </div>
 

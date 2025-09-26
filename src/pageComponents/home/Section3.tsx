@@ -25,8 +25,8 @@ const Section3 = () => {
                 </div>
             </div>
 
-            <div className='relative px-[48px] py-[96px] border-b border-[#F0F0F0] h-[400px]'>
-                <div className='max-w-[1920px] mx-auto relative h-full'>
+            <div className=' relative border-b border-[#F0F0F0] h-[400px]'>
+                <div className='relative h-full max-w-[1920px] mx-auto'>
                     <div className='absolute bottom-0 right-0'>
                         <Art1 />
                     </div>

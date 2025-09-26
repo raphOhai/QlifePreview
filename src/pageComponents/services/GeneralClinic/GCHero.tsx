@@ -44,9 +44,7 @@ const Section2 = () => {
                     <p className='text-[#222] text-[16px] font-weight-[400] leading-[24px]'>
                         We provide accessible, high-quality healthcare for individuals and families. From routine check-ups to specialized consultations, our goal is to keep you healthy and well-informed. Our integrated services ensure your care is continuous, coordinated, and compassionate.
                     </p>
-
                 </div>
-
             </div>
 
             <div>

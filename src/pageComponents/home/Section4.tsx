@@ -51,7 +51,6 @@ const Cards = ({ image, title, description }: { image: string, title: string, de
     return (
         <div className='flex flex-col gap-4 border-b border-[#F0F0F0] pb-10 '>
             <Image src={image} alt='image' width={430} height={504} className='w-full h-[503px] object-cover border-b-[5px] border-[#FFF16F]' />
-
             <div className='flex flex-col gap-4'>
                 <div className='flex justify-between items-center'>
                     <h1 className='text-[#0B0A0B] text-[20px] font-500'>
@@ -59,12 +58,10 @@ const Cards = ({ image, title, description }: { image: string, title: string, de
                     </h1>
                     <ArrowRightIcon className='w-6 h-6 text-[#0B0A0B]' />
                 </div>
-
                 <p>
                     {description}
                 </p>
             </div>
-
         </div>
     )
 }
