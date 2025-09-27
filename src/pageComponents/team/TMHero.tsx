@@ -13,12 +13,14 @@ export const TMHero = () => {
                         Trusted dedicated teams delivering care with compassion and shaping healthier futures together.
                     </h1>
                 </div>
-                <div className='col-span-6'>
-                    <h1 className='text-[16px] font-weight-[400] leading-[24px]  max-w-[80%] justify-self-end'>
+                <div className='col-span-6 flex items-end '>
+                    <h1 className='text-[16px] font-weight-[400] leading-[24px]  max-w-[80%] '>
                         Our people are at the heart of everything we do. From experienced doctors to supportive nurses and dedicated administrative staff, every member of our team plays a role in ensuring our patients receive care that is compassionate, professional, and tailored to their needs.
                     </h1>
                 </div>
             </div>
+
+            
         </div>
     )
 }

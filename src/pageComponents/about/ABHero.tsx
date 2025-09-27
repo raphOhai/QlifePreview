@@ -14,7 +14,7 @@ export const ABHero = () => {
                         We prioritise prompt, patient-centred care for you and yours.
                     </h1>
                 </div>
-                <div className='col-span-5'>
+                <div className='col-span-5 '>
                     <p className='text-[16px] font-weight-[400] leading-[24px]'>
                     We recognized an urgent need to elevate healthcare services to globally acceptable standards that our clients truly deserve, while also properly defining and implementing the three-tier healthcare structure recommended by the World Health Organization.
                     </p>
