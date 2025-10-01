@@ -7,12 +7,10 @@ export const CSection3 = () => {
             <div className='grid grid-cols-12 gap-8'>
                 <div className='col-span-6'>
                     <Section1 />
-
                 </div>
                 <div className='col-span-6 relative'>
                     <Image src='/careers/3.webp' alt='Careers' width={2000} height={2000} className='w-1/2 h-[387px] aspect-106/129 object-cover  absolute top-75 left-0' />
                     <Image src='/careers/4.webp' alt='Careers' width={2000} height={2000} className='w-1/2 h-[387px] aspect-106/129 object-cover  absolute bottom-75 right-0' />
-
                 </div>
 
             </div>

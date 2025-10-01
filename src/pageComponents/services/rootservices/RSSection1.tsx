@@ -1,0 +1,107 @@
+import React from 'react'
+import { RSArt1 } from '@/pageComponents/svgs/RSArt1'
+
+export const RSSection1 = () => {
+    return (
+
+        <div className='space-y-10'>
+
+            <div className='space-y-4 py-[96px] px-[48px]'>
+                <div className='space-y-10 px-[96px]'>
+                    <h1 className='text-[20px] font-weight-[400] leading-[24px]  w-[80%] ' >
+                        Guided care with confidence
+                    </h1>
+                    <p className='text-[48px] font-weight-[400] leading-[54px] text-[#00186B] w-[80%]'>
+                        Specialist support designed to complement and extend primary care.
+                    </p>
+
+                    <div className='grid grid-cols-12 gap-10'>
+                        <div className='col-span-6'>
+                            <p className='text-[16px] font-weight-[400] leading-[24px]'>
+                                Our health assessments are designed to provide a complete picture of your well-being. From routine screenings to advanced diagnostics, we evaluate your overall health and identify potential risks before they develop into serious conditions. This proactive approach empowers you to make informed decisions about your lifestyle and care.
+                            </p>
+                        </div>
+                        <div className='col-span-6'>
+                            <p className='text-[16px] font-weight-[400] leading-[24px]'>
+                                Beyond screenings, we also guide you with preventive strategies and wellness plans tailored to your unique needs. Whether it’s managing nutrition, monitoring heart health, or keeping track of chronic risk factors, our goal is to help you live healthier, longer, and with peace of mind.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <Serviceslist />
+            </div>
+
+            <div className='relative px-[48px] py-[96px]  h-[200px]'>
+                <div className='absolute bottom-0 right-0'>
+                    <RSArt1 />
+                </div>
+            </div>
+
+        </div>
+
+    )
+}
+
+
+
+const Serviceslist = () => {
+    const servicesData = [
+        {
+            title: 'General Clinic',
+            description: 'These assessments cover essential body functions, from cardiovascular health to metabolic performance, and include laboratory and diagnostic tests tailored to your needs. '
+        },
+
+        {
+            title: 'Travel Clinic.',
+            description: 'Our comprehensive screenings are designed to give you a clear picture of your health today and identify any risks for tomorrow. '
+        },
+
+        {
+            title: 'Wellness Clinic',
+            description: 'Our approach combines regular testing, personalized advice, and structured follow-ups, ensuring that you can take control of your health journey and significantly reduce the impact of potential risks over time.'
+        },
+
+        {
+            title: 'Root Services',
+            description: 'We offer a comprehensive range of specialized services designed to address a wide range of health needs, ensuring that you receive the highest level of care and support.'
+        },
+        {
+            title: 'Specialist Clinics',
+            description: 'Our specialist clinics offer advanced care for specific conditions, ensuring that you receive the highest level of care and support.'
+        }
+
+
+    ]
+
+    const ServicesCard = ({ title, description }: { title: string, description: string }) => {
+        const Svg = (<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+            <mask id="mask0_545_21822" style={{ maskType: 'alpha' }} maskUnits="userSpaceOnUse" x="0" y="0" width="32" height="32">
+                <rect width="32" height="32" fill="#D9D9D9" />
+            </mask>
+            <g mask="url(#mask0_545_21822)">
+                <path d="M10.6743 28.4103L9.25635 26.9923L20.2487 15.9999L9.25635 5.0076L10.6743 3.5896L23.0847 15.9999L10.6743 28.4103Z" fill="#222222" />
+            </g>
+        </svg>)
+        return (
+            <div className='space-y-4 border-b border-[#F0F0F0] pb-8'>
+                <h1 className='text-[#0B0A0B] text-[24px] font-weight-[500] leading-[24px] font-hornbill'>{title}</h1>
+                <div className='grid grid-cols-12 gap-10'>
+                    <div className='col-span-9'>
+                        <p className='text-[#0B0A0B] text-[16px] font-weight-[400] leading-[24px]'>{description}</p>
+                    </div>
+                    <div className='col-span-3 flex items-center justify-end'>
+                        <p>{Svg}</p>
+                    </div>
+
+                </div>
+            </div>
+        )
+    }
+    return (
+        <div className='space-y-10 max-w-[800px] mx-auto mt-20'>
+            {servicesData.map((service, index) => (
+                <ServicesCard key={index} title={service.title} description={service.description} />
+            ))}
+        </div>
+    )
+}

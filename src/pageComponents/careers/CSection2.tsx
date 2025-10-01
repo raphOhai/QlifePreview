@@ -16,22 +16,17 @@ export const CSection2 = () => {
                         <h2 className='text-[48px] font-weight-[400] leading-[56px] font-hornbill text-[#00186B] '>
                             Experience a workplace that values your growth, creativity and wel-being.
                         </h2>
-
                         <p className='text-[16px] font-weight-[400] leading-[24px]'>
                             Choosing a career with Q-Life means becoming part of a forward-thinking healthcare team committed to excellence. We recognize that a capable and contented employee is vital to delivering the quality of care our clients deserve. That’s why we prioritize respect, collaboration, and professional growth in everything we do.
                         </p>
-
                         <p className='text-[16px] font-weight-[400] leading-[24px]'>
                             At Q-Life, you’ll find an environment where your dedication, creativity, and initiative are valued. From opportunities for advanced training to exposure to modern healthcare practices, we give our employees the tools and support to thrive in their careers while making a real difference in the community.
                         </p>
                         <div className='py-10'>
                             <Qualities />
                         </div>
-
                     </div>
                 </div>
-
-
             </div>
             <div className=' relative border-b border-[#F0F0F0] h-[200px]'>
                 <div className='relative h-full max-w-[1920px] mx-auto'>

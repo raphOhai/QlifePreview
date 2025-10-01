@@ -163,7 +163,7 @@ const ContactFormX = () => {
                         type="submit"
                         className='bg-[#00186B] text-white p-[24px] rounded-[6px] w-full hover:bg-[#00186B]/90'
                     >
-                        Submit
+                        Submit Request
                     </Button>
                 </form>
             </Form>
