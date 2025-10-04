@@ -1,6 +1,10 @@
+'use client'
+
 import React from 'react'
 import Image from 'next/image'
 import { BFStep1 } from './steps/BFStep1'
+import { useBookingStore } from '@/store/bookingStore'
+import { BFSteps2 } from './steps/BFSteps2'
 
 export const BFHero = () => {
     return (
@@ -33,9 +37,14 @@ export const BFHero = () => {
 
 
 const Steps = () => {
+    const { bookingStep } = useBookingStore()
     return (
-        <div className='py-[96px] px-[48px]'>
-            <BFStep1 />
+        <div className='py-[96px] px-[20px]'>
+            <div className='max-w-[1200px] mx-auto'>
+                {bookingStep === 1 && <BFStep1 />}
+                {bookingStep === 2 && <BFSteps2 />}
+            </div>
+
         </div>
     )
 }

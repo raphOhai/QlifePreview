@@ -1,5 +1,5 @@
 import React from 'react'
-import { RSArt1 } from '../svgs/RSArt1'
+import { ABArt1 } from '../svgs/ABArt1'
 
 export const ABSection1 = () => {
     return (
@@ -33,7 +33,7 @@ export const ABSection1 = () => {
             </div>
             <div className='relative px-[48px] py-[96px]  h-[400px]'>
                 <div className='absolute bottom-0 right-0'>
-                    <RSArt1 />
+                    <ABArt1 />
                 </div>
             </div>
         </div>

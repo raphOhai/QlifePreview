@@ -6,14 +6,10 @@ export const RootCopy = () => {
             <h1 className='text-[24px] font-weight-[500] leading-[52px] text-[#00186B] font-hornbill'>
                 Screening Appointment Booking
             </h1>
-
-
             <div className='space-y-8'>
                 <h1 className='text-[20px] font-weight-[500] leading-[52px] '>
                     Booking terms
                 </h1>
-
-
                 <div className='space-y-1'>
                     <p className='text-[16px] font-bold leading-[24px] text-[#0B0A0B]'>
                         Duration of the Screening
@@ -22,8 +18,6 @@ export const RootCopy = () => {
                         All tests are concluded in a day except those that require additional investigations
                     </p>
                 </div>
-
-
                 <div className='space-y-1'>
                     <p className='text-[16px] font-bold leading-[24px] text-[#0B0A0B]'>
                         Medical report
@@ -32,9 +26,6 @@ export const RootCopy = () => {
                         The report will be ready for collection after 24 working hours
                     </p>
                 </div>
-
-
-
                 <div className='space-y-1'>
                     <p className='text-[16px] font-bold leading-[24px] text-[#0B0A0B]'>
                         Passport photograph
