@@ -5,7 +5,8 @@ import Image from 'next/image'
 import { BFStep1 } from './steps/BFStep1'
 import { useBookingStore } from '@/store/bookingStore'
 import { BFSteps2 } from './steps/BFSteps2'
-
+import { BFStep3 } from './steps/BFStep3'
+    
 export const BFHero = () => {
     return (
         <div className='space-y-10'>
@@ -39,10 +40,11 @@ export const BFHero = () => {
 const Steps = () => {
     const { bookingStep } = useBookingStore()
     return (
-        <div className='py-[96px] px-[20px]'>
+        <div className='py-[96px] px-[20git px]'>
             <div className='max-w-[1200px] mx-auto'>
                 {bookingStep === 1 && <BFStep1 />}
                 {bookingStep === 2 && <BFSteps2 />}
+                {bookingStep === 3 && <BFStep3 />}
             </div>
 
         </div>

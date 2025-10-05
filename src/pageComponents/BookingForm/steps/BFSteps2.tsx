@@ -113,9 +113,6 @@ const TimeOfDaySelect = () => {
 const BasicInfo = () => {
     return (
         <div className='space-y-10'>
-
-
-
             <div className='space-y-5'>
                 <h1 className='text-[20px] font-weight-[500] leading-[52px]'>
                     Booking details
