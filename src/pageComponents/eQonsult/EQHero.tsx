@@ -20,7 +20,6 @@ export const EQHero = () => {
                     </p>
                 </div>
             </div>
-
             <div>
                 <Image src='/eQonsult/1.webp' alt='eQonsult' width={2000} height={2000} className='w-full h-[320px] md:h-[480px] lg:h-[550px] object-cover border-b-[6px] md:border-b-[8px] lg:border-b-[10px] border-[#FFF16F]' />
             </div>

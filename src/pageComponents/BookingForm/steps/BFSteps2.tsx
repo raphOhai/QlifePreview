@@ -30,14 +30,17 @@ export const BFSteps2 = () => {
                             </div>
                         </div>
 
-                        <div className='w-full flex justify-center'>
+                        <div className='w-full flex justify-center mt-18'>
                             <CalendarRange
                                 mode="range"
                                 defaultMonth={new Date()}
-                                numberOfMonths={window.innerWidth < 768 ? 1 : 2}
+                                numberOfMonths={2}
                                 selected={dateRange}
                                 onSelect={setDateRange}
-                                className="rounded-lg border shadow-sm"
+                                className="rounded-lg border shadow-sm [--cell-size:theme(spacing.12)] scale-110"
+                                classNames={{
+                                    months: "flex flex-col gap-6"
+                                }}
                                 disabled={(date) => date < new Date()}
                             />
                         </div>
