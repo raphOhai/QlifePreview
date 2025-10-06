@@ -3,7 +3,7 @@ import React, { useEffect, useRef } from 'react'
 import { gsap } from 'gsap'
 import { IO } from '../../../Animations/observe'
 
-export const WCArt1 = () => {
+export const WCArt1 = (props: React.SVGProps<SVGSVGElement>) => {
     const svgRef = useRef<SVGSVGElement>(null)
 
     useEffect(() => {
@@ -150,11 +150,13 @@ export const WCArt1 = () => {
     return (
         <svg 
             ref={svgRef}
-            width="888" 
-            height="256" 
+            width="100%" 
+            height="auto" 
             viewBox="0 0 888 256" 
             fill="none" 
             xmlns="http://www.w3.org/2000/svg"
+            preserveAspectRatio="xMidYMid meet"
+            {...props}
         >
             <rect x="502" y="12" width="51" height="8" fill="#00186B" />
             <rect x="551" y="8" width="136" height="16" rx="4" fill="#F8F4EB" />

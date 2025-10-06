@@ -3,37 +3,33 @@ import { Checkbox } from '@/components/ui/checkbox'
 import { Input } from '@/components/ui/input'
 import { Label } from '@/components/ui/label'
 import { RadioGroup, RadioGroupItem } from '@/components/ui/radio-group'
-import { Textarea } from '@/components/ui/textarea'
 import React from 'react'
 
 export const ApointmentRoot = () => {
     return (
-        <div className='space-y-10 py-[96px] px-[48px]'>
+        <div className='space-y-6 md:space-y-8 lg:space-y-10 py-12 md:py-16 lg:py-[96px] px-4 md:px-8 lg:px-[48px]'>
             <ApointmentCopy />
             <ApointmentFormX />
         </div>
     )
 }
 
-
 const ApointmentCopy = () => {
     return (
-        <div className='space-y-10 w-1/2'>
-            <h1 className='text-[24px] font-weight-[400] leading-[32px] '>
+        <div className='space-y-6 md:space-y-8 lg:space-y-10 w-full md:w-2/3 lg:w-1/2'>
+            <h1 className='text-xl md:text-2xl lg:text-[24px] font-weight-[400] leading-tight lg:leading-[32px]'>
                 Appointments
             </h1>
-
-            <h2 className='text-[40px] font-weight-[400] leading-[52px] text-[#00186B] font-hornbill'>
+            <h2 className='text-2xl md:text-3xl lg:text-[40px] font-weight-[400] leading-tight lg:leading-[52px] text-[#00186B] font-hornbill'>
                 Start your appointment booking here
             </h2>
-            <div className='space-y-4'>
-                <p className='text-[20px] font-weight-[400] leading-[24px] text-[#00186B]'>
+            <div className='space-y-3 md:space-y-4'>
+                <p className='text-lg md:text-xl lg:text-[20px] font-weight-[400] leading-relaxed lg:leading-[24px] text-[#00186B]'>
                     Schedule your appointment today
                 </p>
-                <p className='text-[16px] font-weight-[400] leading-[24px] text-[#222]'>
+                <p className='text-sm md:text-base lg:text-[16px] font-weight-[400] leading-relaxed lg:leading-[24px] text-[#222]'>
                     To begin your appointment request, please answer a few basic questions. A coordinator will then contact you to discuss your needs. As a private clinic, we accept self-pay patients, individuals with private medical insurance and corporate patients
                 </p>
-
             </div>
         </div>
     )
@@ -43,11 +39,11 @@ const ApointmentCopy = () => {
 
 const ApointmentFormX = () => {
     return (
-        <div className='grid grid-cols-12 gap-10'>
-            <div className='col-span-6'>
+        <div className='grid grid-cols-1 md:grid-cols-12 gap-6 md:gap-8 lg:gap-10'>
+            <div className='md:col-span-6'>
                 <AppointmentForm />
             </div>
-            <div className='col-span-6'>
+            <div className='md:col-span-6'>
                 <ContactCopy />
             </div>
         </div>
@@ -56,8 +52,6 @@ const ApointmentFormX = () => {
 
 
 const AppointmentForm = () => {
-
-
     const SexRadioGroup = () => {
         return (
             <div className='space-y-6'>
@@ -77,7 +71,6 @@ const AppointmentForm = () => {
                 </RadioGroup>
 
             </div>
-
         )
     }
 
@@ -235,16 +228,12 @@ const ContactCopy = () => {
                     We are conveniently located and easily accessible for patients across the city.
                 </p>
                 <div className='space-y-4'>
-
                     <h1 className='text-[20px] font-weight-[400] leading-[24px] text-[#222] max-w-[70%]'>
                         155A Prince Ade Odedina Street,
                         Off Sinari Daranijo, Victoria Island 101244,
                         Lagos, Nigeria
                     </h1>
-
-
                 </div>
-
                 <p className='text-[16px] font-weight-[400] leading-[24px] text-[#707070]'>
                     Access Ajose Adeogun from Eko Hotel round about, make a second right turn onto Younis Bashorun (by Haliburton after Zenith Bank HQ) then a second left unto Sinari Daranijo. Prince Ade Odedina is the first street on the right. We are at 155A Prince Ade Odedina Street.
                 </p>
@@ -266,11 +255,8 @@ const ContactCopy = () => {
                     {/* <h1 className='text-[20px] font-weight-[400] leading-[24px] text-[#222]'>
                         Saturdays & Public Holidays: 8:00am - 4:00pm
                     </h1> */}
-
                 </div>
             </div>
-
-
 
             <div className='space-y-3'>
                 <h1 className='text-[24px] font-weight-[400] leading-[32px] text-[#00186B]'>
@@ -280,20 +266,14 @@ const ContactCopy = () => {
                     Speak directly with our front desk. We’re always happy to assist you.
                 </p>
                 <div className='space-y-0'>
-
                     <h1 className='text-[20px] font-weight-[400] leading-[24px] text-[#222]'>
                         +234 (0) 809 974 2000
                     </h1>
                     <h1 className='text-[20px] font-weight-[400] leading-[24px] text-[#222]'>
                         +234 (0) 81139 QLIFE (0811 397 5433)
                     </h1>
-
                 </div>
             </div>
-
-
-
         </div>
-
     )
 }

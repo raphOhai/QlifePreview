@@ -1,31 +1,14 @@
 'use client'
 
-import { useQuery } from '@tanstack/react-query'
-import { Button } from "@/components/ui/button"
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Hero } from '@/pageComponents/home/Hero'
 import { Section2 } from '@/pageComponents/home/Section2'
 import Section3 from '@/pageComponents/home/Section3'
 import { Section4 } from '@/pageComponents/home/Section4'
 import { Section5 } from '@/pageComponents/home/Section5'
 import { Section6 } from '@/pageComponents/home/Section6'
-import { CTA } from '@/pageComponents/home/CTA'
-
-
-// Demo API function
-const fetchExample = async () => {
-  const response = await fetch('https://jsonplaceholder.typicode.com/posts/1')
-  if (!response.ok) {
-    throw new Error('Network response was not ok')
-  }
-  return response.json()
-}
+import { CTA } from '@/components/CTA'
 
 export default function Home() {
-  const { data, isLoading, error } = useQuery({
-    queryKey: ['example'],
-    queryFn: fetchExample,
-  })
 
   return (
     <div className="min-h-screen ">
@@ -35,7 +18,7 @@ export default function Home() {
       <Section4 />
       <Section5 />
       <Section6 />
-      <CTA />
+      <CTA title='Ready to take charge of your health?' description='Experience the power of innovation firsthand and discover how out solutions can revolutionize your IT infrastructure. Contact us now for our wide range of IT services to you optimize your operations and achieve your goals.' buttonText='Book an appointment' />
     </div>
   )
 }

@@ -1,9 +1,6 @@
 import React from 'react'
 
 export const MapEmbed = () => {
-  // Google Maps embed URL for the clinic location
-  const mapSrc = `https://www.google.com/maps/embed/v1/place?key=YOUR_API_KEY&q=155A+Prince+Ade+Odedina+Street+Victoria+Island+Lagos+Nigeria`
-  
   // Alternative: Use the generic embed without API key (less features but free)
   const genericMapSrc = `https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.7234567890123!2d3.4219!3d6.4281!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNsKwMjUnNDEuMiJOIDPCsDI1JzE4LjgiRQ!5e0!3m2!1sen!2sng!4v1234567890123!5m2!1sen!2sng`
 

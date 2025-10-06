@@ -24,7 +24,7 @@ export const WCSection3 = () => {
         
     ]
   return (
-    <div className='space-y-10 max-w-[900px] mx-auto py-[96px]'>
+    <div className='space-y-10 max-w-[900px] mx-auto py-12 md:py-16 lg:py-[96px] px-4 md:px-8 lg:px-[48px]'>
         {CardsData.map((card, index) => (
             <Cards key={index} title={card.title} description={card.description} index={index} />
         ))}

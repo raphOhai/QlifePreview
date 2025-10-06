@@ -13,23 +13,22 @@ import { ConArt1 } from '../svgs/ConArt1'
 export const ContactForm = () => {
     return (
         <div>
-            <div className='space-y-10 py-[96px] px-[48px]'>
-                <div className='grid grid-cols-12 gap-4'>
-                    <div className='col-span-6'>
+            <div className='space-y-6 md:space-y-8 lg:space-y-10 py-12 md:py-16 lg:py-[96px] px-4 md:px-8 lg:px-[48px]'>
+                <div className='grid grid-cols-1 md:grid-cols-12 gap-6 md:gap-8 lg:gap-4'>
+                    <div className='md:col-span-6'>
                         <ContactCopy />
                     </div>
-                    <div className='col-span-6'>
+                    <div className='md:col-span-6'>
                         <ContactFormX />
                     </div>
                 </div>
             </div>
-            <div className='relative px-[48px] py-[96px]  h-[200px]'>
+            <div className='relative px-4 md:px-8 lg:px-[48px] py-12 md:py-16 lg:py-[96px] h-[100px] md:h-[150px] lg:h-[200px] hidden md:block'>
                 <div className='absolute bottom-0 right-0'>
                     <ConArt1 />
                 </div>
             </div>
         </div>
-
     )
 }
 
@@ -64,12 +63,12 @@ const ContactFormX = () => {
     }
 
     return (
-        <div className='space-y-5'>
-            <div className='space-y-3'>
-                <h1 className='text-[24px] font-weight-[400] leading-[32px] text-[#00186B]'>
+        <div className='space-y-4 md:space-y-5'>
+            <div className='space-y-2 md:space-y-3'>
+                <h1 className='text-xl md:text-2xl lg:text-[24px] font-weight-[400] leading-tight lg:leading-[32px] text-[#00186B]'>
                     Get in Touch With Us
                 </h1>
-                <p className='text-[16px] font-weight-[400] leading-[24px] text-[#222]'>
+                <p className='text-sm md:text-base lg:text-[16px] font-weight-[400] leading-relaxed lg:leading-[24px] text-[#222]'>
                     Fill out the form below and a member of our team will reach out to you shortly with the information or support you need.
                 </p>
             </div>
@@ -174,89 +173,73 @@ const ContactFormX = () => {
 
 const ContactCopy = () => {
     return (
-
-        <div className='space-y-10 max-w-[80%]'>
-            <div className='space-y-3'>
-                <h1 className='text-[24px] font-weight-[400] leading-[32px] text-[#00186B]'>
+        <div className='space-y-6 md:space-y-8 lg:space-y-10 w-full md:max-w-[90%] lg:max-w-[80%]'>
+            <div className='space-y-2 md:space-y-3'>
+                <h1 className='text-xl md:text-2xl lg:text-[24px] font-weight-[400] leading-tight lg:leading-[32px] text-[#00186B]'>
                     Clinic Hours
                 </h1>
-                <p className='text-[16px] font-weight-[400] leading-[24px] text-[#222]'>
+                <p className='text-sm md:text-base lg:text-[16px] font-weight-[400] leading-relaxed lg:leading-[24px] text-[#222]'>
                     Our clinic is open Monday to Saturday, with flexible hours designed to fit your schedule.
                 </p>
-                <div className='space-y-0'>
-
-                    <h1 className='text-[20px] font-weight-[400] leading-[24px] text-[#222]'>
+                <div className='space-y-1'>
+                    <h1 className='text-base md:text-lg lg:text-[20px] font-weight-[400] leading-relaxed lg:leading-[24px] text-[#222]'>
                         Monday - Friday: 8:00am - 7:00pm
                     </h1>
-                    <h1 className='text-[20px] font-weight-[400] leading-[24px] text-[#222]'>
+                    <h1 className='text-base md:text-lg lg:text-[20px] font-weight-[400] leading-relaxed lg:leading-[24px] text-[#222]'>
                         Saturdays & Public Holidays: 8:00am - 4:00pm
                     </h1>
-
                 </div>
             </div>
 
 
-            <div className='space-y-3'>
-                <h1 className='text-[24px] font-weight-[400] leading-[32px] text-[#00186B]'>
+            <div className='space-y-2 md:space-y-3'>
+                <h1 className='text-xl md:text-2xl lg:text-[24px] font-weight-[400] leading-tight lg:leading-[32px] text-[#00186B]'>
                     Our Location
                 </h1>
-                <p className='text-[16px] font-weight-[400] leading-[24px] text-[#222]'>
+                <p className='text-sm md:text-base lg:text-[16px] font-weight-[400] leading-relaxed lg:leading-[24px] text-[#222]'>
                     We are conveniently located and easily accessible for patients across the city.
                 </p>
-                <div className='space-y-4'>
-
-                    <h1 className='text-[20px] font-weight-[400] leading-[24px] text-[#222] max-w-[70%]'>
+                <div className='space-y-3 md:space-y-4'>
+                    <h1 className='text-base md:text-lg lg:text-[20px] font-weight-[400] leading-relaxed lg:leading-[24px] text-[#222] w-full md:max-w-[80%] lg:max-w-[70%]'>
                         155A Prince Ade Odedina Street,
                         Off Sinari Daranijo, Victoria Island 101244,
                         Lagos, Nigeria
                     </h1>
-
-
                 </div>
 
-                <p className='text-[16px] font-weight-[400] leading-[24px] text-[#707070]'>
+                <p className='text-xs md:text-sm lg:text-[16px] font-weight-[400] leading-relaxed lg:leading-[24px] text-[#707070]'>
                     Access Ajose Adeogun from Eko Hotel round about, make a second right turn onto Younis Bashorun (by Haliburton after Zenith Bank HQ) then a second left unto Sinari Daranijo. Prince Ade Odedina is the first street on the right. We are at 155A Prince Ade Odedina Street.
                 </p>
             </div>
 
-
-            <div className='space-y-3'>
-                <h1 className='text-[24px] font-weight-[400] leading-[32px] text-[#00186B]'>
+            <div className='space-y-2 md:space-y-3'>
+                <h1 className='text-xl md:text-2xl lg:text-[24px] font-weight-[400] leading-tight lg:leading-[32px] text-[#00186B]'>
                     Email Us
                 </h1>
-                <p className='text-[16px] font-weight-[400] leading-[24px] text-[#222]'>
+                <p className='text-sm md:text-base lg:text-[16px] font-weight-[400] leading-relaxed lg:leading-[24px] text-[#222]'>
                     Send us a message and our team will respond promptly to your inquiry.
                 </p>
-                <div className='space-y-4'>
-
-                    <h1 className='text-[20px] font-weight-[400] leading-[24px] text-[#222]'>
+                <div className='space-y-3 md:space-y-4'>
+                    <h1 className='text-base md:text-lg lg:text-[20px] font-weight-[400] leading-relaxed lg:leading-[24px] text-[#222]'>
                         customercare@qlifefamilyclinic.com
                     </h1>
-                    {/* <h1 className='text-[20px] font-weight-[400] leading-[24px] text-[#222]'>
-                        Saturdays & Public Holidays: 8:00am - 4:00pm
-                    </h1> */}
-
                 </div>
             </div>
 
-
-
-            <div className='space-y-3'>
-                <h1 className='text-[24px] font-weight-[400] leading-[32px] text-[#00186B]'>
+            <div className='space-y-2 md:space-y-3'>
+                <h1 className='text-xl md:text-2xl lg:text-[24px] font-weight-[400] leading-tight lg:leading-[32px] text-[#00186B]'>
                     Call us
                 </h1>
-                <p className='text-[16px] font-weight-[400] leading-[24px] text-[#222]'>
-                    Speak directly with our front desk. We’re always happy to assist you.
+                <p className='text-sm md:text-base lg:text-[16px] font-weight-[400] leading-relaxed lg:leading-[24px] text-[#222]'>
+                    Speak directly with our front desk. We&apos;re always happy to assist you.
                 </p>
-                <div className='space-y-0'>
-
-                    <h1 className='text-[20px] font-weight-[400] leading-[24px] text-[#222]'>
+                <div className='space-y-1'>
+                    <h1 className='text-base md:text-lg lg:text-[20px] font-weight-[400] leading-relaxed lg:leading-[24px] text-[#222]'>
                         +234 (0) 809 974 2000
                     </h1>
-                    <h1 className='text-[20px] font-weight-[400] leading-[24px] text-[#222]'>
+                    <h1 className='text-base md:text-lg lg:text-[20px] font-weight-[400] leading-relaxed lg:leading-[24px] text-[#222]'>
                         +234 (0) 81139 QLIFE (0811 397 5433)
                     </h1>
-
                 </div>
             </div>
 

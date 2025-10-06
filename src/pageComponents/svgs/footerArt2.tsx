@@ -1,8 +1,16 @@
 import React from 'react'
 
-export const FooterArt2 = () => {
+export const FooterArt2 = (props: React.SVGProps<SVGSVGElement>) => {
     return (
-        <svg width="734" height="384" viewBox="0 0 734 384" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg
+            width="100%"
+            height="auto"
+            viewBox="0 0 734 384"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            preserveAspectRatio="xMidYMid meet"
+            {...props}
+        >
             <rect x="-119" y="184" width="138" height="8" fill="#F8F4EB" />
             <rect x="17" y="180" width="96" height="16" rx="4" fill="#F8F4EB" />
             <rect x="25" y="180" width="6" height="16" fill="#A6E5D7" />

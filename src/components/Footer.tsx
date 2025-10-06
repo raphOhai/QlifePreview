@@ -6,55 +6,52 @@ import { FooterArt2 } from '../pageComponents/svgs/footerArt2'
 
 export const Footer = () => {
   return (
-    <div className='bg-[#00186B] text-white pt-[120px] relative ' >
-      <div className='max-w-[1920px] mx-auto flex flex-col gap-30'>
-        <div className='grid grid-cols-12 gap-4 p-[20px]'>
-          <div className='col-span-6'>
+    <div className='bg-[#00186B] text-white pt-12 md:pt-20 lg:pt-[120px] relative' >
+      <div className='max-w-[1920px] mx-auto flex flex-col gap-8 md:gap-30'>
+        <div className='grid grid-cols-1 md:grid-cols-12 gap-6 md:gap-4 p-4 md:p-[20px]'>
+          <div className='md:col-span-6'>
             <div className='flex flex-col gap-3'>
               <Image src="/qlife.webp" alt="Qlife" width={84} height={29} />
-              <p>
+              <p className='text-sm md:text-base'>
                 A personalised approach to healthcare for you & yours, from us.
               </p>
             </div>
-
           </div>
-          <div className='col-span-6'>
+          <div className='md:col-span-6'>
             <LinksStack />
           </div>
         </div>
 
-        <div className='grid grid-cols-12 gap-4'>
-          <div className='col-span-6'>
-            <div className='relative px-[48px] py-[96px] h-[400px]'>
-              <div className='absolute bottom-30 left-0'>
+        <div className='grid grid-cols-1 md:grid-cols-12 gap-6 md:gap-4'>
+          <div className='md:col-span-6 hidden md:block'>
+            <div className='relative px-6 md:px-[48px] py-12 md:py-[96px] h-[200px] md:h-[400px]'>
+              <div className='absolute bottom-10 md:bottom-30 left-0'>
                 <FooterArt2 />
               </div>
             </div>
           </div>
 
-          <div className='col-span-6'>
+          <div className='md:col-span-6 px-4 md:px-0'>
             <LinkStack />
           </div>
         </div>
       </div>
-      <div className='grid grid-cols-12 gap-4 bg-[#fff16f] px-[48px] py-[24px] '>
-        <div className='col-span-6'>
-          <p className='text-[16px] font-weight-[400] leading-[24px] text-[#00186B]'>
+      <div className='grid grid-cols-1 md:grid-cols-12 gap-4 bg-[#fff16f] px-4 md:px-[48px] py-4 md:py-[24px]'>
+        <div className='md:col-span-6'>
+          <p className='text-xs md:text-[16px] font-weight-[400] leading-[20px] md:leading-[24px] text-[#00186B]'>
             © 2025 Q-Life Family Clinic.
           </p>
         </div>
-        <div className='col-span-6 flex justify-end'>
-          <div className='flex flex-row gap-4 items-center'>
-            <p className='text-[16px] font-weight-[400] leading-[24px] text-[#00186B]'>
+        <div className='md:col-span-6 flex justify-start md:justify-end'>
+          <div className='flex flex-col md:flex-row gap-2 md:gap-4 items-start md:items-center'>
+            <p className='text-xs md:text-[16px] font-weight-[400] leading-[20px] md:leading-[24px] text-[#00186B]'>
               Terms and Conditions
             </p>
-            <p className='text-[16px] font-weight-[400] leading-[24px] text-[#00186B]'>
-              Terms and Conditions
+            <p className='text-xs md:text-[16px] font-weight-[400] leading-[20px] md:leading-[24px] text-[#00186B]'>
+              Privacy Policy
             </p>
           </div>
         </div>
-
-
       </div>
     </div>
   )
@@ -100,35 +97,32 @@ const LinkStack = () => {
     },
   ]
   return (
-    <div className='grid grid-cols-12 gap-4'>
-
-      <div className='col-span-6 flex flex-col gap-3'>
-        <div className='flex flex-col gap-3'>
-          <p className='text-[16px]'>
+    <div className='grid grid-cols-1 md:grid-cols-12 gap-4 md:gap-4'>
+      <div className='md:col-span-6 flex flex-col gap-3'>
+        <div className='flex flex-col gap-2'>
+          <p className='text-sm md:text-[16px]'>
             155A Prince Ade Odedina Street,
           </p>
-          <p className='text-[16px]'>
+          <p className='text-sm md:text-[16px]'>
             Victoria Island 101244, Lagos.
           </p>
         </div>
-        <p className='text-[16px]'>
+        <p className='text-sm md:text-[16px]'>
           234 (0)809 974 2000
         </p>
-        <p className='text-[16px]'>
+        <p className='text-sm md:text-[16px]'>
           customercare@qlifefamilyclinic.com
         </p>
-
       </div>
 
-      <div className='col-span-6'>
-        <div className='flex flex-row gap-4 items-center '>
+      <div className='md:col-span-6'>
+        <div className='flex flex-row gap-3 md:gap-4 items-center'>
           {socialLinks.map((link) => (
-            <Link href={link.href} key={link.href}>
+            <Link href={link.href} key={link.href} className='scale-75 md:scale-100'>
               {link.icon}
             </Link>
           ))}
         </div>
-
       </div>
     </div>
   )
@@ -136,51 +130,42 @@ const LinkStack = () => {
 
 const LinksStack = () => {
   return (
-    <div className='grid grid-cols-12 gap-4'>
-      <div className='col-span-4 flex flex-col gap-3'>
-
-        <h3>
+    <div className='grid grid-cols-2 md:grid-cols-12 gap-6 md:gap-4'>
+      <div className='md:col-span-4 flex flex-col gap-2 md:gap-3'>
+        <h3 className='text-base md:text-lg font-medium'>
           Company
         </h3>
-
         <div className='flex flex-col gap-1'>
-          <Link href="/" className='text-[16px]'      >About</Link>
-          <Link href="/" className='text-[16px]'>People</Link>
-          <Link href="/" className='text-[16px]'>Careers</Link>
-          <Link href="/" className='text-[16px]'>Blog</Link>
-          <Link href="/" className='text-[16px]'>Contact Us</Link>
+          <Link href="/" className='text-sm md:text-[16px] hover:underline'>About</Link>
+          <Link href="/" className='text-sm md:text-[16px] hover:underline'>People</Link>
+          <Link href="/" className='text-sm md:text-[16px] hover:underline'>Careers</Link>
+          <Link href="/" className='text-sm md:text-[16px] hover:underline'>Blog</Link>
+          <Link href="/" className='text-sm md:text-[16px] hover:underline'>Contact Us</Link>
         </div>
-
-
-
       </div>
-      <div className='col-span-4 flex flex-col gap-3'>
-        <h3>
-          Company
+      <div className='md:col-span-4 flex flex-col gap-2 md:gap-3'>
+        <h3 className='text-base md:text-lg font-medium'>
+          Services
         </h3>
-
         <div className='flex flex-col gap-1'>
-          <Link href="/" className='text-[16px]'>General Practice</Link>
-          <Link href="/" className='text-[16px]'>Travel Medicine</Link>
-          <Link href="/" className='text-[16px]'>Health Screening</Link>
-          <Link href="/" className='text-[16px]'>Immunizations</Link>
-          <Link href="/" className='text-[16px]'>Diagnostic Services</Link>
-          <Link href="/" className='text-[16px]'>Specialist Clinics</Link>
-
+          <Link href="/" className='text-sm md:text-[16px] hover:underline'>General Practice</Link>
+          <Link href="/" className='text-sm md:text-[16px] hover:underline'>Travel Medicine</Link>
+          <Link href="/" className='text-sm md:text-[16px] hover:underline'>Health Screening</Link>
+          <Link href="/" className='text-sm md:text-[16px] hover:underline'>Immunizations</Link>
+          <Link href="/" className='text-sm md:text-[16px] hover:underline'>Diagnostic Services</Link>
+          <Link href="/" className='text-sm md:text-[16px] hover:underline'>Specialist Clinics</Link>
         </div>
       </div>
-      <div className='col-span-4 flex flex-col gap-3'>
-        <h3>
+      <div className='md:col-span-4 flex flex-col gap-2 md:gap-3 col-span-2 md:col-span-4'>
+        <h3 className='text-base md:text-lg font-medium'>
           Health Screening
         </h3>
-
         <div className='flex flex-col gap-1'>
-          <Link href="/" className='text-[16px]'>Canada</Link>
-          <Link href="/" className='text-[16px]'>United Kingdom</Link>
-          <Link href="/" className='text-[16px]'>United States</Link>
+          <Link href="/" className='text-sm md:text-[16px] hover:underline'>Canada</Link>
+          <Link href="/" className='text-sm md:text-[16px] hover:underline'>United Kingdom</Link>
+          <Link href="/" className='text-sm md:text-[16px] hover:underline'>United States</Link>
         </div>
       </div>
-
     </div>
   )
 }    

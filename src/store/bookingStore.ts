@@ -12,7 +12,7 @@ interface BookingStoreState {
     setDateRange: (range: DateRange | undefined) => void
 }
 
-export const useBookingStore = create<BookingStoreState>((set, get) => ({
+export const useBookingStore = create<BookingStoreState>((set) => ({
     bookingStep: 1,
     setBookingStep: value => set({ bookingStep: value }),
     applicants: [],

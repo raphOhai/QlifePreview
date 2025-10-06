@@ -4,19 +4,21 @@ import { Art1 } from '../svgs/art1'
 const Section3 = () => {
     return (
         <div className='flex flex-col gap-4 relative'>
-            <div className="py-[96px] px-[48px] relative pb-[50px]">
-                <div className="max-w-[1920px] mx-auto grid grid-cols-12 gap-9">
-                    <div className="col-span-6">
-                        <div className='flex flex-col gap-4'>
-                            <h1>The Q-Life Edge</h1>
-                            <h2 className='text-[40px] font-weight-[400] leading-[56px] text-[#00186B]'>Committed to unrivalled and exceptional patient-centred care that meets modern healthcare excellence.</h2>
-                            <p className='text-[16px] font-weight-[400] leading-[24px]'>
+            <div className="py-12 md:py-16 lg:py-[96px] px-4 md:px-8 lg:px-[48px] relative pb-8 md:pb-[50px]">
+                <div className="max-w-[1920px] mx-auto grid grid-cols-1 md:grid-cols-12 gap-6 md:gap-9">
+                    <div className="md:col-span-6">
+                        <div className='flex flex-col gap-3 md:gap-4'>
+                            <h1 className='text-base md:text-lg'>The Q-Life Edge</h1>
+                            <h2 className='text-2xl md:text-3xl lg:text-[40px] font-weight-[400] leading-tight lg:leading-[56px] text-[#00186B]'>
+                                Committed to unrivalled and exceptional patient-centred care that meets modern healthcare excellence.
+                            </h2>
+                            <p className='text-sm md:text-base lg:text-[16px] font-weight-[400] leading-relaxed lg:leading-[24px]'>
                                 Our design philosophy isn&apos;t just about aesthetics; it&apos;s about creating meaningful connections between your brand and your customers. That&apos;s why, beyond delivering world-class.
                             </p>
                         </div>
                     </div>
-                    <div className="col-span-6">
-                        <div className='flex flex-col gap-4'>
+                    <div className="md:col-span-6">
+                        <div className='flex flex-col gap-3 md:gap-4'>
                             <Cards svg={1} title="Our Culture" description="When you need care, we act quickly and carefully. From accurate diagnoses to personalized treatment plans, we provide you the care and support you need to restore your health quickly and safely." />
                             <Cards svg={2} title="Our Culture" description="When you need care, we act quickly and carefully. From accurate diagnoses to personalized treatment plans, we provide you the care and support you need to restore your health quickly and safely." />
                             <Cards svg={3} title="Our Culture" description="When you need care, we act quickly and carefully. From accurate diagnoses to personalized treatment plans, we provide you the care and support you need to restore your health quickly and safely." />
@@ -25,9 +27,9 @@ const Section3 = () => {
                 </div>
             </div>
 
-            <div className=' relative border-b border-[#F0F0F0] h-[400px]'>
+            <div className='relative border-b border-[#F0F0F0] h-[300px] md:h-[450px] lg:h-[600px]  md:block'>
                 <div className='relative h-full max-w-[1920px] mx-auto'>
-                    <div className='absolute bottom-0 right-0'>
+                    <div className='absolute bottom-0 right-0 w-[600px] md:w-[800px] lg:w-[1000px]'>
                         <Art1 />
                     </div>
                 </div>
@@ -56,18 +58,17 @@ const Cards = ({ svg, title, description }: { svg: number, title: string, descri
         </g>
     </svg>)
     return (
-        <div className='p-[32px] rounded-[8px] border border-[#F0F0F0] flex flex-col gap-4' data-animation="fade" data-split="false" >
-            <div className='bg-[#F0F0F0] rounded-full p-4 w-[60px] h-[60px] flex items-center justify-center'>
+        <div className='p-4 md:p-6 lg:p-[32px] rounded-[8px] border border-[#F0F0F0] flex flex-col gap-3 md:gap-4' data-animation="fade" data-split="false" >
+            <div className='bg-[#F0F0F0] rounded-full p-3 md:p-4 w-[50px] h-[50px] md:w-[60px] md:h-[60px] flex items-center justify-center'>
                 {svg === 1 && svg_1}
                 {svg === 2 && svg_2}
                 {svg === 3 && svg_3}
-
             </div>
-            <h1 className='text-[#0B0A0B] text-[24px] font-500'>
-                Our Culture
+            <h1 className='text-[#0B0A0B] text-lg md:text-xl lg:text-[24px] font-500'>
+                {title}
             </h1>
-            <p>
-                When you need care, we act quickly and carefully. From accurate diagnoses to personalized treatment plans, we provide you the care and support you need to restore your health quickly and safely.
+            <p className='text-sm md:text-base leading-relaxed'>
+                {description}
             </p>
         </div>
     )

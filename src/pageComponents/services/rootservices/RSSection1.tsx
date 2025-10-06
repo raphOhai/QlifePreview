@@ -5,24 +5,23 @@ export const RSSection1 = () => {
     return (
 
         <div className='space-y-10'>
-
-            <div className='space-y-4 py-[96px] px-[48px]'>
-                <div className='space-y-10 px-[96px]'>
-                    <h1 className='text-[20px] font-weight-[400] leading-[24px]  w-[80%] ' >
+            <div className='space-y-4 py-12 md:py-16 lg:py-[96px] px-4 md:px-8 lg:px-[48px]'>
+                <div className='space-y-6 md:space-y-10 md:px-[48px] lg:px-[96px]'>
+                    <h1 className='text-base md:text-lg lg:text-[20px] font-weight-[400] leading-[24px]  w-full md:w-[80%] ' >
                         Guided care with confidence
                     </h1>
-                    <p className='text-[48px] font-weight-[400] leading-[54px] text-[#00186B] w-[80%]'>
+                    <p className='text-3xl md:text-4xl lg:text-[48px] font-weight-[400] leading-tight md:leading-[44px] lg:leading-[54px] text-[#00186B] w-full md:w-[80%]'>
                         Specialist support designed to complement and extend primary care.
                     </p>
 
-                    <div className='grid grid-cols-12 gap-10'>
-                        <div className='col-span-6'>
-                            <p className='text-[16px] font-weight-[400] leading-[24px]'>
+                    <div className='grid grid-cols-1 md:grid-cols-12 gap-6 md:gap-10'>
+                        <div className='md:col-span-6'>
+                            <p className='text-sm md:text-base lg:text-[16px] font-weight-[400] leading-relaxed lg:leading-[24px]'>
                                 Our health assessments are designed to provide a complete picture of your well-being. From routine screenings to advanced diagnostics, we evaluate your overall health and identify potential risks before they develop into serious conditions. This proactive approach empowers you to make informed decisions about your lifestyle and care.
                             </p>
                         </div>
-                        <div className='col-span-6'>
-                            <p className='text-[16px] font-weight-[400] leading-[24px]'>
+                        <div className='md:col-span-6'>
+                            <p className='text-sm md:text-base lg:text-[16px] font-weight-[400] leading-relaxed lg:leading-[24px]'>
                                 Beyond screenings, we also guide you with preventive strategies and wellness plans tailored to your unique needs. Whether it’s managing nutrition, monitoring heart health, or keeping track of chronic risk factors, our goal is to help you live healthier, longer, and with peace of mind.
                             </p>
                         </div>
@@ -31,7 +30,7 @@ export const RSSection1 = () => {
                 <Serviceslist />
             </div>
 
-            <div className='relative px-[48px] py-[96px]  h-[200px]'>
+            <div className='relative px-4 md:px-8 lg:px-[48px] py-12 md:py-16 lg:py-[96px]  h-[150px] md:h-[180px] lg:h-[200px]'>
                 <div className='absolute bottom-0 right-0'>
                     <RSArt1 />
                 </div>
@@ -83,22 +82,21 @@ const Serviceslist = () => {
             </g>
         </svg>)
         return (
-            <div className='space-y-4 border-b border-[#F0F0F0] pb-8'>
-                <h1 className='text-[#0B0A0B] text-[24px] font-weight-[500] leading-[24px] font-hornbill'>{title}</h1>
-                <div className='grid grid-cols-12 gap-10'>
-                    <div className='col-span-9'>
-                        <p className='text-[#0B0A0B] text-[16px] font-weight-[400] leading-[24px]'>{description}</p>
+            <div className='space-y-3 md:space-y-4 border-b border-[#F0F0F0] pb-6 md:pb-8'>
+                <h1 className='text-[#0B0A0B] text-xl md:text-2xl lg:text-[24px] font-weight-[500] leading-[24px] font-hornbill'>{title}</h1>
+                <div className='grid grid-cols-1 md:grid-cols-12 gap-6 md:gap-10'>
+                    <div className='md:col-span-9'>
+                        <p className='text-[#0B0A0B] text-sm md:text-base lg:text-[16px] font-weight-[400] leading-relaxed lg:leading-[24px]'>{description}</p>
                     </div>
-                    <div className='col-span-3 flex items-center justify-end'>
+                    <div className='md:col-span-3 flex items-center justify-end'>
                         <p>{Svg}</p>
                     </div>
-
                 </div>
             </div>
         )
     }
     return (
-        <div className='space-y-10 max-w-[800px] mx-auto mt-20'>
+        <div className='space-y-8 md:space-y-10 max-w-[800px] mx-auto mt-10 md:mt-20 px-4 md:px-0'>
             {servicesData.map((service, index) => (
                 <ServicesCard key={index} title={service.title} description={service.description} />
             ))}
