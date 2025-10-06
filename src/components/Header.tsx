@@ -67,7 +67,7 @@ export const Header = () => {
     };
   }, []);         
   return (
-    <div className='flex flex-col'>
+    <div className='flex flex-col relative z-50'>
       <Banner />
       <MainHeader />
     </div>
@@ -93,6 +93,8 @@ const Banner = () => {
 
 export const MainHeader = () => {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false)
+  const [servicesOpen, setServicesOpen] = React.useState(false)
+  const [bookingOpen, setBookingOpen] = React.useState(false)
 
   return (
     <div className="p-3 md:p-4">
@@ -196,25 +198,71 @@ export const MainHeader = () => {
         </div>
 
         {/* Mobile Menu */}
-        {isMenuOpen && (
-          <div className='lg:hidden mt-4 pb-4 border-t pt-4'>
+        <div 
+          className={`lg:hidden overflow-hidden transition-all duration-300 ease-in-out ${
+            isMenuOpen ? 'max-h-[800px] opacity-100 mt-4' : 'max-h-0 opacity-0 mt-0'
+          }`}
+        >
+          <div className='pb-4 border-t pt-4'>
             <div className='flex flex-col gap-4'>
               <Link href="/about" className='hover:text-primary transition-colors'>About</Link>
               
               <div className='flex flex-col gap-2'>
-                <span className='font-medium text-sm text-gray-500'>Services</span>
-                <Link href="/services" className='pl-4 hover:text-primary transition-colors'>All Services</Link>
-                <Link href="/services/generalclinic" className='pl-4 hover:text-primary transition-colors'>General Clinic</Link>
-                <Link href="/services/travelclinic" className='pl-4 hover:text-primary transition-colors'>Travel Clinic</Link>
-                <Link href="/services/wellnessclinic" className='pl-4 hover:text-primary transition-colors'>Wellness Clinic</Link>
+                <button 
+                  onClick={() => setServicesOpen(!servicesOpen)}
+                  className='flex items-center justify-between hover:text-primary transition-colors text-left'
+                >
+                  <span className='font-medium'>Services</span>
+                  <svg 
+                    className={`w-4 h-4 transition-transform ${servicesOpen ? 'rotate-180' : ''}`} 
+                    fill="none" 
+                    stroke="currentColor" 
+                    viewBox="0 0 24 24"
+                  >
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                  </svg>
+                </button>
+                <div 
+                  className={`overflow-hidden transition-all duration-300 ease-in-out ${
+                    servicesOpen ? 'max-h-48 opacity-100' : 'max-h-0 opacity-0'
+                  }`}
+                >
+                  <div className='flex flex-col gap-2 pl-4 pt-2'>
+                    <Link href="/services" className='hover:text-primary transition-colors'>All Services</Link>
+                    <Link href="/services/generalclinic" className='hover:text-primary transition-colors'>General Clinic</Link>
+                    <Link href="/services/travelclinic" className='hover:text-primary transition-colors'>Travel Clinic</Link>
+                    <Link href="/services/wellnessclinic" className='hover:text-primary transition-colors'>Wellness Clinic</Link>
+                  </div>
+                </div>
               </div>
 
               <Link href="/eQonsult" className='hover:text-primary transition-colors'>eQonsult</Link>
               
               <div className='flex flex-col gap-2'>
-                <span className='font-medium text-sm text-gray-500'>Booking</span>
-                <Link href="/booking" className='pl-4 hover:text-primary transition-colors'>Book Screening</Link>
-                <Link href="/apointments" className='pl-4 hover:text-primary transition-colors'>Appointments</Link>
+                <button 
+                  onClick={() => setBookingOpen(!bookingOpen)}
+                  className='flex items-center justify-between hover:text-primary transition-colors text-left'
+                >
+                  <span className='font-medium'>Booking</span>
+                  <svg 
+                    className={`w-4 h-4 transition-transform ${bookingOpen ? 'rotate-180' : ''}`} 
+                    fill="none" 
+                    stroke="currentColor" 
+                    viewBox="0 0 24 24"
+                  >
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                  </svg>
+                </button>
+                <div 
+                  className={`overflow-hidden transition-all duration-300 ease-in-out ${
+                    bookingOpen ? 'max-h-32 opacity-100' : 'max-h-0 opacity-0'
+                  }`}
+                >
+                  <div className='flex flex-col gap-2 pl-4 pt-2'>
+                    <Link href="/booking" className='hover:text-primary transition-colors'>Book Screening</Link>
+                    <Link href="/apointments" className='hover:text-primary transition-colors'>Appointments</Link>
+                  </div>
+                </div>
               </div>
 
               <Link href="/team" className='hover:text-primary transition-colors'>Team</Link>
@@ -228,7 +276,7 @@ export const MainHeader = () => {
               </Button>
             </div>
           </div>
-        )}
+        </div>
       </div>
     </div>
   )

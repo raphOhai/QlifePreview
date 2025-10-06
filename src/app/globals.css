@@ -5,11 +5,68 @@
 /* Custom Font - Hornbill Personal Use */
 @font-face {
   font-family: 'Hornbill';
-  src: url('/fonts/hornbill.woff2') format('woff2'),
-       url('/fonts/hornbill.woff') format('woff'),
-       url('/fonts/hornbill.ttf') format('truetype');
-  font-weight: normal;
+  src: url('/Fonts/Hornbill/Hornbill-Personal Use Regular.otf') format('opentype');
+  font-weight: 400;
   font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Hornbill';
+  src: url('/Fonts/Hornbill/Hornbill-Personal Use Italic.otf') format('opentype');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Hornbill';
+  src: url('/Fonts/Hornbill/Hornbill-Personal Use Bold.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Hornbill';
+  src: url('/Fonts/Hornbill/Hornbill-Personal Use BoldItalic.otf') format('opentype');
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Hornbill';
+  src: url('/Fonts/Hornbill/Hornbill-Personal Use Black.otf') format('opentype');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Hornbill';
+  src: url('/Fonts/Hornbill/Hornbill-Personal Use BlackItalic.otf') format('opentype');
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* Custom Font - Instrument Sans */
+@font-face {
+  font-family: 'Instrument Sans';
+  src: url('/Fonts/InstrumentSans/InstrumentSans-VariableFont_wdth,wght.ttf') format('truetype');
+  font-weight: 100 900;
+  font-stretch: 75% 100%;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Instrument Sans';
+  src: url('/Fonts/InstrumentSans/InstrumentSans-Italic-VariableFont_wdth,wght.ttf') format('truetype');
+  font-weight: 100 900;
+  font-stretch: 75% 100%;
+  font-style: italic;
   font-display: swap;
 }
 
@@ -18,7 +75,7 @@
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-instrument-sans);
+  --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif;
   --font-mono: var(--font-geist-mono);
   --font-geist-sans: var(--font-geist-sans);
   --font-hornbill: 'Hornbill', serif;

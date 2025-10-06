@@ -1,25 +1,8 @@
 
 import type { Metadata } from "next";
-import { Geist, Geist_Mono, Instrument_Sans } from "next/font/google";
 import "./globals.css";
 import { QueryProvider } from "@/providers/query-provider";
 import { RootLayout } from "@/components/RootLayout";
-
-
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
-
-const instrumentSans = Instrument_Sans({
-  variable: "--font-instrument-sans",
-  subsets: ["latin"],
-});
 
 export const metadata: Metadata = {
   title: "Qlife App",
@@ -33,9 +16,7 @@ export default function Layout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} ${instrumentSans.variable} antialiased`}
-      >
+      <body className="antialiased">
         <QueryProvider>
           <RootLayout>{children}</RootLayout>
         </QueryProvider>

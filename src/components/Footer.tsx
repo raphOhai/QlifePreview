@@ -36,13 +36,13 @@ export const Footer = () => {
           </div>
         </div>
       </div>
-      <div className='grid grid-cols-1 md:grid-cols-12 gap-4 bg-[#fff16f] px-4 md:px-[48px] py-4 md:py-[24px]'>
-        <div className='md:col-span-6'>
+      <div className='grid grid-cols-12 mt-10 md:grid-cols-12 gap-4 bg-[#fff16f] px-4 md:px-[48px] py-4 md:py-[24px]'>
+        <div className='col-span-6'>
           <p className='text-xs md:text-[16px] font-weight-[400] leading-[20px] md:leading-[24px] text-[#00186B]'>
             © 2025 Q-Life Family Clinic.
           </p>
         </div>
-        <div className='md:col-span-6 flex justify-start md:justify-end'>
+        <div className='col-span-6 flex justify-start md:justify-end'>
           <div className='flex flex-col md:flex-row gap-2 md:gap-4 items-start md:items-center'>
             <p className='text-xs md:text-[16px] font-weight-[400] leading-[20px] md:leading-[24px] text-[#00186B]'>
               Terms and Conditions
