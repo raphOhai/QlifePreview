@@ -46,7 +46,6 @@ export const BSection2 = () => {
 
 
 const BookingCard = ({ image, title, description, aspectRatio, link }: { image: string, title: string, description: string, aspectRatio: string, link: string }) => {
-  
         return (
         <div className='grid grid-cols-1 md:grid-cols-12 gap-4'>
             <div className='md:col-span-4'>

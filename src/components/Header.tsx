@@ -103,7 +103,9 @@ export const MainHeader = () => {
         <div className="flex justify-between items-center">
           {/* Logo */}
           <div className='flex-shrink-0'>
-            <Image src="/logo.svg" alt="Qlife" width={84} height={29} className='w-16 h-auto md:w-[84px]' />
+            <Link href="/">
+              <Image src="/logo.svg" alt="Qlife" width={84} height={29} className='w-16 h-auto md:w-[84px]' />
+            </Link>
           </div>
           
           {/* Desktop Navigation */}
@@ -205,7 +207,9 @@ export const MainHeader = () => {
         >
           <div className='pb-4 border-t pt-4'>
             <div className='flex flex-col gap-4'>
-              <Link href="/about" onClick={() => setIsMenuOpen(false)} className='hover:text-primary transition-colors'>About</Link>
+              <Link href="/about" onClick={() => setIsMenuOpen(false)} className='hover:text-primary transition-colors'>
+                <h1>About</h1>
+              </Link>
               
               <div className='flex flex-col gap-2'>
                 <button 

@@ -30,7 +30,7 @@ export const BFSteps2 = () => {
                             </div>
                         </div>
 
-                        <div className='w-full overflow-x-auto'>
+                        <div className='w-full flex justify-center'>
                             <CalendarRange
                                 mode="range"
                                 defaultMonth={new Date()}
@@ -57,7 +57,7 @@ export const BFSteps2 = () => {
 const TimeOfDaySelect = () => {
     const TimeBox = ({ time }: { time: string }) => {
         return (
-            <div className='flex flex-row gap-1 border-[1px] border-[#B8B8B8] p-2 md:p-[5px] items-center justify-center cursor-pointer hover:bg-gray-50 transition-colors'>
+            <div onClick={() => useBookingStore.getState().setBookingStep(3)}  className='flex flex-row gap-1 border-[1px] border-[#B8B8B8] p-2 md:p-[5px] items-center justify-center cursor-pointer hover:bg-gray-50 transition-colors'>
                 <h1 className='text-base md:text-lg lg:text-[20px] font-weight-[500] text-[#0B0A0B]'>
                     {time}
                 </h1>
