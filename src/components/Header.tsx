@@ -205,7 +205,7 @@ export const MainHeader = () => {
         >
           <div className='pb-4 border-t pt-4'>
             <div className='flex flex-col gap-4'>
-              <Link href="/about" className='hover:text-primary transition-colors'>About</Link>
+              <Link href="/about" onClick={() => setIsMenuOpen(false)} className='hover:text-primary transition-colors'>About</Link>
               
               <div className='flex flex-col gap-2'>
                 <button 
@@ -228,15 +228,15 @@ export const MainHeader = () => {
                   }`}
                 >
                   <div className='flex flex-col gap-2 pl-4 pt-2'>
-                    <Link href="/services" className='hover:text-primary transition-colors'>All Services</Link>
-                    <Link href="/services/generalclinic" className='hover:text-primary transition-colors'>General Clinic</Link>
-                    <Link href="/services/travelclinic" className='hover:text-primary transition-colors'>Travel Clinic</Link>
-                    <Link href="/services/wellnessclinic" className='hover:text-primary transition-colors'>Wellness Clinic</Link>
+                    <Link href="/services" onClick={() => setIsMenuOpen(false)} className='hover:text-primary transition-colors'>All Services</Link>
+                    <Link href="/services/generalclinic" onClick={() => setIsMenuOpen(false)} className='hover:text-primary transition-colors'>General Clinic</Link>
+                    <Link href="/services/travelclinic" onClick={() => setIsMenuOpen(false)} className='hover:text-primary transition-colors'>Travel Clinic</Link>
+                    <Link href="/services/wellnessclinic" onClick={() => setIsMenuOpen(false)} className='hover:text-primary transition-colors'>Wellness Clinic</Link>
                   </div>
                 </div>
               </div>
 
-              <Link href="/eQonsult" className='hover:text-primary transition-colors'>eQonsult</Link>
+              <Link href="/eQonsult" onClick={() => setIsMenuOpen(false)} className='hover:text-primary transition-colors'>eQonsult</Link>
               
               <div className='flex flex-col gap-2'>
                 <button 
@@ -259,20 +259,20 @@ export const MainHeader = () => {
                   }`}
                 >
                   <div className='flex flex-col gap-2 pl-4 pt-2'>
-                    <Link href="/booking" className='hover:text-primary transition-colors'>Book Screening</Link>
-                    <Link href="/apointments" className='hover:text-primary transition-colors'>Appointments</Link>
+                    <Link href="/booking" onClick={() => setIsMenuOpen(false)} className='hover:text-primary transition-colors'>Book Screening</Link>
+                    <Link href="/apointments" onClick={() => setIsMenuOpen(false)} className='hover:text-primary transition-colors'>Appointments</Link>
                   </div>
                 </div>
               </div>
 
-              <Link href="/team" className='hover:text-primary transition-colors'>Team</Link>
-              <Link href="/careers" className='hover:text-primary transition-colors'>Careers</Link>
+              <Link href="/team" onClick={() => setIsMenuOpen(false)} className='hover:text-primary transition-colors'>Team</Link>
+              <Link href="/careers" onClick={() => setIsMenuOpen(false)} className='hover:text-primary transition-colors'>Careers</Link>
               
               <Button variant='link' className='text-black justify-start p-0' asChild>
-                <Link href="/contact">Contact Us</Link>
+                <Link href="/contact" onClick={() => setIsMenuOpen(false)}>Contact Us</Link>
               </Button>
               <Button variant='outline' className='border-primary text-primary py-3 rounded-[30px]' asChild>
-                <Link href="/booking">Book an Appointment</Link>
+                <Link href="/booking" onClick={() => setIsMenuOpen(false)}>Book an Appointment</Link>
               </Button>
             </div>
           </div>

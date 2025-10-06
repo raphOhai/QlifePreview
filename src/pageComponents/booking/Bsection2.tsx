@@ -1,6 +1,8 @@
 import React from 'react'
 import Image from 'next/image'
 
+import Link from 'next/link'
+
 export const BSection2 = () => {
     return (
 
@@ -26,10 +28,10 @@ export const BSection2 = () => {
 
                 </div>
                 <div className='md:col-span-8 space-y-4 md:space-y-2'>
-                    <BookingCard image='/booking/maps/1.webp' title='Canada Visa Medical Examination' description='We offer full medical assessments for Canadian visa applicants. Our staff ensures all requirements are met, giving you confidence in your application.' aspectRatio='aspect-23/35' />
-                    <BookingCard image='/booking/maps/2.webp' title='UK Visa Medical Examination' description='We provide thorough medical assessments to meet UK visa requirements. Our team ensures your evaluation is completed efficiently and professionally.' aspectRatio='aspect-15/13' />
+                    <BookingCard link='/booking/canada' image='/booking/maps/1.webp' title='Canada Visa Medical Examination' description='We offer full medical assessments for Canadian visa applicants. Our staff ensures all requirements are met, giving you confidence in your application.' aspectRatio='aspect-23/35' />
+                    <BookingCard link='/booking/uk' image='/booking/maps/2.webp' title='UK Visa Medical Examination' description='We provide thorough medical assessments to meet UK visa requirements. Our team ensures your evaluation is completed efficiently and professionally.' aspectRatio='aspect-15/13' />
                     <div className='mt-0 md:mt-[-200px]'>
-                    <BookingCard image='/booking/maps/3.webp' title='US Visa Medical Examination' description='Our clinic conducts all necessary examinations for US visa applicants. You can trust us to guide you through the process smoothly and accurately.' aspectRatio='aspect-1/1' />
+                    <BookingCard link='/booking/us' image='/booking/maps/3.webp' title='US Visa Medical Examination' description='Our clinic conducts all necessary examinations for US visa applicants. You can trust us to guide you through the process smoothly and accurately.' aspectRatio='aspect-1/1' />
                     </div>
 
                 </div>
@@ -43,8 +45,9 @@ export const BSection2 = () => {
 
 
 
-const BookingCard = ({ image, title, description, aspectRatio }: { image: string, title: string, description: string, aspectRatio: string }) => {
-    return (
+const BookingCard = ({ image, title, description, aspectRatio, link }: { image: string, title: string, description: string, aspectRatio: string, link: string }) => {
+  
+        return (
         <div className='grid grid-cols-1 md:grid-cols-12 gap-4'>
             <div className='md:col-span-4'>
                 <Image src={image} alt={title} width={430} height={504} className={`w-full h-[300px] md:h-[500px] object-contain ${aspectRatio}`} />
@@ -56,9 +59,11 @@ const BookingCard = ({ image, title, description, aspectRatio }: { image: string
                 <p className='text-[#0B0A0B] text-sm md:text-base lg:text-[16px] font-weight-[400] leading-relaxed lg:leading-[24px] w-full md:max-w-[85%] lg:max-w-[80%]'>
                     {description}
                 </p>
+                <Link href={link}>
                 <button className='bg-transparent border border-[#00186B] text-[#00186B] py-3 px-6 md:p-[24px] rounded-full text-sm md:text-base'>
                     Book an appointment
                 </button>
+                </Link>
             </div>
         </div>
     )
