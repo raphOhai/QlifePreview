@@ -4,21 +4,16 @@ import React from 'react'
 export const Hero = () => {
  
     return (
-        <div
-            className='h-[min(85vh,1000px)] bg-cover bg-center bg-no-repeat relative overflow-hidden'
-            style={{ backgroundImage: "url('/hero_background.webp')" }}
-        >
+        <div className='h-[min(85vh,1000px)] bg-cover bg-center bg-no-repeat relative overflow-hidden'
+            style={{ backgroundImage: "url('/hero_background.webp')" }}>
             <div
                 className='absolute left-0 w-full h-full'
-                style={{ background: 'linear-gradient(180deg, rgba(0, 0, 0, 0.00) 45%, #000 100%)' }}
-            >
+                style={{ background: 'linear-gradient(180deg, rgba(0, 0, 0, 0.00) 45%, #000 100%)' }}>
             </div>
             <HeroContent />
         </div>
     )
 }
-
-
 
 const HeroContent = () => {
     return (

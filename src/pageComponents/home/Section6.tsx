@@ -31,13 +31,13 @@ export const Section6 = () => {
 
                 <div className='grid grid-cols-1 md:grid-cols-12 gap-6 md:gap-4 mt-8 md:mt-10'>
                     <div className='md:col-span-4'>
-                        <Cards image='/home/section4/1.webp' title='Waka with Q Life & HEI' description='Waka with Q-Life & HEI is a 9km walk a memorial event in honour of Dr. Ade Alakija (former medical director of Q-Life Family Clinic).' name='Babajide Claudius-Cole' date='July 08, 2025' />
+                        <Cards image='/home/section6/1.webp' title='Waka with Q Life & HEI' description='Waka with Q-Life & HEI is a 9km walk a memorial event in honour of Dr. Ade Alakija (former medical director of Q-Life Family Clinic).' name='Babajide Claudius-Cole' date='July 08, 2025' />
                     </div>
                     <div className='md:col-span-4'>
-                        <Cards image='/home/section4/2.webp' title='5th year remembrance of Dr. Funmi Alakija' description='Dr Funmi Alakija was a kind, compassionate soul who touched the lives of many people. Her warmth and generosity continue to inspire us.' name='Babajide Claudius-Cole' date='July 08, 2025' />
+                        <Cards image='/home/section6/3.webp' title='5th year remembrance of Dr. Funmi Alakija' description='Dr Funmi Alakija was a kind, compassionate soul who touched the lives of many people. Her warmth and generosity continue to inspire us.' name='Babajide Claudius-Cole' date='July 08, 2025' />
                     </div>
                     <div className='md:col-span-4'>
-                        <Cards image='/home/section4/3.webp' title='Happy International Women&apos;s Day' description='At Q-Life Family Clinic, we believe women need to be in a position of power to make informed decisions about their health and make it a priority.' name='Babajide Claudius-Cole' date='July 08, 2025' />
+                        <Cards image='/home/section6/2.webp' title='Happy International Women&apos;s Day' description='At Q-Life Family Clinic, we believe women need to be in a position of power to make informed decisions about their health and make it a priority.' name='Babajide Claudius-Cole' date='July 08, 2025' />
                     </div>
                 </div>
 
