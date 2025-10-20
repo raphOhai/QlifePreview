@@ -5,7 +5,7 @@ export const Hero = () => {
  
     return (
         <div
-            className='h-[min(90vh,1500px)] bg-cover bg-center bg-no-repeat relative overflow-hidden'
+            className='h-[min(85vh,1000px)] bg-cover bg-center bg-no-repeat relative overflow-hidden'
             style={{ backgroundImage: "url('/hero_background.webp')" }}
         >
             <div

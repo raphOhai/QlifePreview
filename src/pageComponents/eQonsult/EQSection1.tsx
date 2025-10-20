@@ -31,7 +31,6 @@ export const EQSection1 = () => {
                     </p>
                 </div>
             </div>
-
         </div>
     )
 }
