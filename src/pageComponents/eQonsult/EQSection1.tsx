@@ -2,7 +2,7 @@ import React from 'react'
 
 export const EQSection1 = () => {
     return (
-        <div className='space-y-8 md:space-y-10 py-12 md:py-16 lg:py-[96px] px-4 md:px-8 lg:px-[48px]'>
+        <div className='space-y-8 md:space-y-10 md:py-16 lg:py-[20px] px-4 md:px-8 lg:px-[48px] ' >
             <div className='space-y-4 md:space-y-6 w-full md:w-[80%] lg:w-[70%]'>
                 <h1 className='text-base md:text-lg font-weight-[400] leading-[24px]'>
                     Quality medical care from the comfort of home.

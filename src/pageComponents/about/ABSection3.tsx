@@ -15,7 +15,7 @@ const Content = () => {
     const Pill = ({ title }: { title: string }) => {
         return (
             <div className='bg-[#FFF16F] rounded-[40px] px-4 py-2 md:p-4 border-[1px] border-[#F8F4EB]'>
-                <p className='text-sm md:text-base'>
+                <p className='text-sm md:text-base font-weight-[800] leading-[24px]'>
                     {title}
                 </p>
 
@@ -34,8 +34,15 @@ const Content = () => {
 
 
             <div className='flex flex-row gap-2 md:gap-3 lg:gap-4 flex-wrap'>
-                <Pill title='Patient-Centred' />
-                <Pill title='Patient-Centred' />
+                <Pill title='Hardwork' />
+                <Pill title='Faith' />
+                <Pill title='Family' />
+                <Pill title='Quality' />
+                <Pill title='Growth' />
+                <Pill title='Resilience' />
+                <Pill title='Dependable' />
+                <Pill title='Innovation' />
+                <Pill title='Integrity' />
             </div>
 
         </div>

@@ -29,7 +29,7 @@ const Links = () => {
         <path d="M8.53854 10.2115L7.66021 9.30771L10.8429 6.125H0.75V4.875H10.8429L7.66021 1.69229L8.53854 0.788544L13.25 5.5L8.53854 10.2115Z" fill="#0B0A0B" />
     </svg>)
     return (
-        <div className='flex flex-col sm:flex-row gap-3 md:gap-4'>
+        <div className='flex flex-col sm:flex-row  lg:gap-12 md:gap-4'>
             <div className='flex flex-row gap-2 md:gap-4 items-center'>
                 <p className='text-sm md:text-[17px] font-bold leading-[24px] text-[#0B0A0B]'>General Clinic</p>
                 {Arrow}

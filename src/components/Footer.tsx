@@ -24,7 +24,7 @@ export const Footer = () => {
 
         <div className='grid grid-cols-1 md:grid-cols-12 gap-6 md:gap-4'>
           <div className='md:col-span-6 hidden md:block'>
-            <div className='relative px-6 md:px-[48px] py-12 md:py-[96px] h-[200px] md:h-[400px]'>
+            <div className='relative px-6 md:px-[48px] py-12 md:py-[96px] h-[300px] md:h-[400px]'>
               <div className='absolute bottom-10 md:bottom-30 left-0'>
                 <FooterArt2 />
               </div>
@@ -101,7 +101,7 @@ const LinkStack = () => {
       <div className='md:col-span-6 flex flex-col gap-3'>
         <div className='flex flex-col gap-2'>
           <p className='text-sm md:text-[16px]'>
-            155A Prince Ade Odedina Street,
+            Remove "A". 155 Prince Ade...
           </p>
           <p className='text-sm md:text-[16px]'>
             Victoria Island 101244, Lagos.
@@ -148,12 +148,9 @@ const LinksStack = () => {
           Services
         </h3>
         <div className='flex flex-col gap-1'>
-          <Link href="/" className='text-sm md:text-[16px] hover:underline'>General Practice</Link>
-          <Link href="/" className='text-sm md:text-[16px] hover:underline'>Travel Medicine</Link>
-          <Link href="/" className='text-sm md:text-[16px] hover:underline'>Health Screening</Link>
-          <Link href="/" className='text-sm md:text-[16px] hover:underline'>Immunizations</Link>
-          <Link href="/" className='text-sm md:text-[16px] hover:underline'>Diagnostic Services</Link>
-          <Link href="/" className='text-sm md:text-[16px] hover:underline'>Specialist Clinics</Link>
+          <Link href="/" className='text-sm md:text-[16px] hover:underline'>QLife General Clinic</Link>
+          <Link href="/" className='text-sm md:text-[16px] hover:underline'>QLife Travel Clinic</Link>
+          <Link href="/" className='text-sm md:text-[16px] hover:underline'>QLife Wellness Clinic</Link>
         </div>
       </div>
       <div className='md:col-span-4 flex flex-col gap-2 md:gap-3 col-span-2 md:col-span-4'>

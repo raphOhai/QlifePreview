@@ -5,7 +5,7 @@ export const ABSection1 = () => {
     return (
 
         <div>
-            <div className='space-y-8 md:space-y-10 lg:space-y-13 py-10 md:py-[60px] px-4 md:px-8 lg:px-[48px]'>
+            <div className='space-y-8 md:space-y-10 lg:space-y-13 py-1 md:py-[60px] px-4 md:px-8 lg:px-[48px]'>
                 <h1 className='text-base md:text-lg lg:text-[20px] font-weight-[500] leading-[24px]'>
                     Who We Are
                 </h1>

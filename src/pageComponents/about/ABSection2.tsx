@@ -43,8 +43,8 @@ const Card = () => {
     }
     return (
         <div className='space-y-6 md:space-y-8 lg:space-y-10 p-6 md:p-8 lg:p-[48px] bg-[#F8F4EB]' >
-            <Content title='Managing Jet Lag and Fatigue' description='Crossing time zones can leave travelers feeling disoriented, tired, and unable to enjoy their trip fully. Our experts provide guidance on rest, hydration, and light exposure to help your body adjust more quickly.' />
-            <Content title='Preventing Deep Vein Thrombosis (DVT)' description='Long hours of sitting on flights can increase the risk of blood clots. We offer tailored advice and preventive strategies, from simple in-flight exercises to medical interventions where needed.' />
+            <Content title='Vision' description='Our vision is to be a leading provider of global-standard health services in Nigeria, setting the benchmark for primary care delivery across the country.' />
+            <Content title='Mission' description='Our mission is to provide prompt, efficient, and client-focused healthcare services that align with global standards. Using skilled processionals and modern technology in a friendly and homely environment.' />
 
         </div>
     )

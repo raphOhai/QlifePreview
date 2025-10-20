@@ -3,7 +3,7 @@ import Image from 'next/image'
 
 export const ABHero = () => {
     return (
-        <div className='space-y-4 py-12 md:py-16 lg:py-[96px] px-4 md:px-8 lg:px-[48px]'>
+        <div className='space-y-4  md:py-16 lg:py-[96px] px-4 md:px-8 lg:px-[48px]'>
             <h1 className='text-base md:text-lg'>
                 About Us
             </h1>

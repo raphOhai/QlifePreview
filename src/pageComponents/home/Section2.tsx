@@ -6,7 +6,7 @@ export const Section2 = () => {
             <div className='max-w-[1920px] mx-auto flex flex-col gap-8 md:gap-12 lg:gap-20'>
                 <div className='flex flex-col gap-3 md:gap-4 w-full md:w-2/3 lg:w-1/2'>
                     <h1 className='text-[#FFF16F] text-2xl md:text-3xl lg:text-[48px] font-weight-[400] leading-tight lg:leading-[56px]'>
-                        We provide prompt and efficient world-class health care services that our clients deserve.
+                        Prompt and efficient world-class health care you deserve.
                     </h1>
 
                     <p className='text-white text-sm md:text-base lg:text-[16px] font-weight-[400] leading-relaxed lg:leading-[24px]'>
@@ -31,10 +31,10 @@ const Section2Content = () => {
                     <div className='h-[1px] w-full bg-white' />
                     <div className="flex flex-col gap-1">
                         <h1 className='text-white text-lg md:text-xl lg:text-[20px] leading-relaxed lg:leading-[56px] font-bold'>
-                            Healthcare Excellence
+                            Common Health Needs Managed
                         </h1>
                         <p className='text-white text-sm md:text-base lg:text-[16px] font-weight-[400] leading-relaxed lg:leading-[24px]'>
-                            Our team of experienced healthcare professionals is dedicated to providing the highest quality of care to our patients.
+                            You get comprehensive care for the vast majority of your everyday health needs right here.
                         </p>
                     </div>
                 </div>
@@ -42,15 +42,15 @@ const Section2Content = () => {
             <div className='lg:col-span-4' data-fade-group-item>
                 <div className="flex flex-col gap-2">
                     <h1 className='text-white text-3xl md:text-4xl lg:text-[48px] font-weight-[400] leading-tight lg:leading-[56px]'>
-                        80%
+                        60 Million
                     </h1>
                     <div className='h-[1px] w-full bg-white' />
                     <div className="flex flex-col gap-1">
                         <h1 className='text-white text-lg md:text-xl lg:text-[20px] leading-relaxed lg:leading-[56px] font-bold'>
-                            Healthcare Excellence
+                            Lives Potentially Saved
                         </h1>
                         <p className='text-white text-sm md:text-base lg:text-[16px] font-weight-[400] leading-relaxed lg:leading-[24px]'>
-                            Our team of experienced healthcare professionals is dedicated to providing the highest quality of care to our patients.
+                            By focusing on early intervention and prevention, we can drastically improve health outcomes.
                         </p>
                     </div>
                 </div>
@@ -58,15 +58,15 @@ const Section2Content = () => {
             <div className='lg:col-span-4' data-fade-group-item>
                 <div className="flex flex-col gap-2">
                     <h1 className='text-white text-3xl md:text-4xl lg:text-[48px] font-weight-[400] leading-tight lg:leading-[56px]'>
-                        80%
+                        3.7 Years
                     </h1>
                     <div className='h-[1px] w-full bg-white' />
                     <div className="flex flex-col gap-1">
                         <h1 className='text-white text-lg md:text-xl lg:text-[20px] leading-relaxed lg:leading-[56px] font-bold'>
-                            Healthcare Excellence
+                            Increased Life Expectancy
                         </h1>
                         <p className='text-white text-sm md:text-base lg:text-[16px] font-weight-[400] leading-relaxed lg:leading-[24px]'>
-                            Our team of experienced healthcare professionals is dedicated to providing the highest quality of care to our patients.
+                            Increased overall population health and average life expectancy by 2030.
                         </p>
                     </div>
                 </div>

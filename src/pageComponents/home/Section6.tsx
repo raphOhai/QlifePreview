@@ -41,7 +41,7 @@ export const Section6 = () => {
                     </div>
                 </div>
 
-                <div className='flex justify-center items-center'>
+                <div className='flex justify-start items-center'>
                     <button className='bg-[#00186B] text-white py-3 px-6 md:p-[24px] rounded-full text-sm md:text-base'>
                         View articles
                     </button>

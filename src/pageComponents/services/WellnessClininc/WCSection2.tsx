@@ -33,7 +33,7 @@ export const WCSection2 = () => {
 
 
 
-      <div className='relative border-b border-[#F0F0F0] h-[200px] md:h-[450px] lg:h-[600px]  md:block'>
+      <div className='relative border-b border-[#F0F0F0] h-[200px] md:h-[450px] lg:h-[300px]  md:block'>
                 <div className='relative h-full max-w-[1920px] mx-auto'>
                     <div className='absolute bottom-0 right-0 w-[600px] md:w-[800px] lg:w-[1000px]'>
                     <WCArt1 />

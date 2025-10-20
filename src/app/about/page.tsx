@@ -9,7 +9,7 @@ import { CTA } from '@/components/CTA'
 
 const page = () => {
   return (
-    <div className='max-w-[1920px] mx-auto w-full space-y-20'>
+    <div className='max-w-[1920px] mx-auto w-full space-y-2'>
       <ABHero />
       <ABSection1 />
       <ABSection2 />

@@ -140,7 +140,7 @@ export const MainHeader = () => {
 
                 <NavigationMenuItem>
                   <NavigationMenuLink asChild className={navigationMenuTriggerStyle()}>
-                    <Link href="/eQonsult">eQonsult</Link>
+                    <Link href="/eQconsult">eQconsult</Link>
                   </NavigationMenuLink>
                 </NavigationMenuItem>
 

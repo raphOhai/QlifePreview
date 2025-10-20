@@ -8,7 +8,7 @@ export const Section5 = () => {
                 <h1 className='text-[#0B0A0B] text-base md:text-lg lg:text-[20px] font-weight-[400] leading-tight md:leading-[40px] lg:leading-[56px]'>
                     Health Screening
                 </h1>
-                <div className='grid grid-cols-1 md:grid-cols-12 gap-6 md:gap-4'>
+                <div className='grid grid-cols-1 md:grid-cols-12 gap-6 md:gap-4 lg:gap-20'>
                     <div className='md:col-span-6'>
                         <div className='flex flex-col gap-3 md:gap-4'  data-fade-group>
                             <h1 className='text-[#00186B] text-2xl md:text-3xl lg:text-[40px] font-weight-[400] leading-tight md:leading-[44px] lg:leading-[56px]' data-fade-group-item>

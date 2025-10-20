@@ -4,7 +4,7 @@ import Image from 'next/image'
 export const EQHero = () => {
     return (
         <div className='space-y-6 md:space-y-8 lg:space-y-10 py-12 md:py-16 lg:py-[96px] px-4 md:px-8 lg:px-[48px]'>
-            <h1 className='text-sm md:text-base text-[#00186B]'>
+            <h1 className='text-sm md:text-base text-[black]'>
                 Telemedicine
             </h1>
             <div className='grid grid-cols-1 md:grid-cols-12 gap-6 md:gap-8'>
