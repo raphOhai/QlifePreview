@@ -2,6 +2,7 @@
     'use client'
 import React from 'react'
 import Image from 'next/image'
+import Link from 'next/link'
 
 export const GCHero = () => {
 
@@ -42,9 +43,12 @@ const Section2 = () => {
                 </div>
 
                 <div className='md:col-span-4'>
-                    <button className='bg-[#00186B] text-white py-3 px-6 md:p-[24px] rounded-full text-sm md:text-base'>
-                        Book an Appointment
-                    </button>
+
+                    <Link href='/booking'>
+                        <button className='bg-[#00186B] text-white py-3 px-6 md:p-[24px] rounded-full text-sm md:text-base'>
+                            Book an Appointment
+                        </button>
+                    </Link>
 
                 </div>
             </div>
