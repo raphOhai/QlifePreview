@@ -2,40 +2,28 @@
 import React, { useState } from 'react'
 import { MinusIcon, PlusIcon } from 'lucide-react'
 
-export const FAQ = ({leadingText}:{leadingText?: string}) => {
+export const FAQ = ({ leadingText }: { leadingText?: string }) => {
     const [openIndex, setOpenIndex] = useState<number | null>(null)
 
     const faqs = [
         {
             question: "How do I book an appointment at QLife?",
-            answer: "QLife Family Clinic is a healthcare provider that offers a range of services to the community. We are a team of healthcare professionals who are dedicated to providing the best possible care to our patients."
+            answer: "Booking an appointment is easy. You can schedule your visit by calling our front desk, sending us an email or booking online through our official website. You may also choose to walk in. Immigration screening is strictly booked on our website."
         },
 
         {
             question: "How often should I schedule a health check-up?",
-            answer: "QLife Family Clinic is a healthcare provider that offers a range of services to the community. We are a team of healthcare professionals who are dedicated to providing the best possible care to our patients."
+            answer: "We recommend a comprehensive health check-up at least once a year for adults. However, depending on your age, medical history, or lifestyle, your doctor may suggest more frequent visits. Regular check-ups help detect health issues early and keep you in control of your well-being."
         },
 
         {
             question: "Can I access specialist doctors through QLife?",
-            answer: "QLife Family Clinic is a healthcare provider that offers a range of services to the community. We are a team of healthcare professionals who are dedicated to providing the best possible care to our patients."
+            answer: "Yes, you can. Q-Life provides access to a wide network of specialist doctors across various fields, including internal medicine, paediatrics, obstetrics and gynaecology, cardiology, and more. Our primary care team coordinates your care and connects you to the right specialist when needed."
         },
 
         {
-            question: "How do I book an appointment at QLife?",
-            answer: "QLife Family Clinic is a healthcare provider that offers a range of services to the community. We are a team of healthcare professionals who are dedicated to providing the best possible care to our patients."
-        },
-        {
-            question: "How do I book an appointment at QLife?",
-            answer: "QLife Family Clinic is a healthcare provider that offers a range of services to the community. We are a team of healthcare professionals who are dedicated to providing the best possible care to our patients."
-        },
-        {
-            question: "How quickly can I get results from tests?    ",
-            answer: "QLife Family Clinic is a healthcare provider that offers a range of services to the community. We are a team of healthcare professionals who are dedicated to providing the best possible care to our patients."
-        },
-        {
-            question: "How do I book an appointment at QLife?",
-            answer: "QLife Family Clinic is a healthcare provider that offers a range of services to the community. We are a team of healthcare professionals who are dedicated to providing the best possible care to our patients."
+            question: "How quickly can I get results from tests?",
+            answer: "Our modern diagnostic facilities are designed for speed and accuracy. Most routine lab tests are ready within 24 hours, while more specialised tests may take a few days. We also offer email or online result delivery for your convenience."
         },
 
     ]
@@ -109,9 +97,8 @@ const FAQblock = ({ question, answer, isOpen, onToggle }: {
             </div>
 
             <div
-                className={`overflow-hidden transition-all duration-300 ease-in-out ${
-                    isOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
-                }`}
+                className={`overflow-hidden transition-all duration-300 ease-in-out ${isOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
+                    }`}
                 id={`faq-answer-${question.replace(/\s+/g, '-').toLowerCase()}`}
             >
                 <p className='text-[#0B0A0B] text-sm md:text-[15px] font-weight-[400] leading-[22px] md:leading-[24px] tracking-[-0.48px] pt-2'>
