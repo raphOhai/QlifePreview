@@ -101,7 +101,7 @@ const LinkStack = () => {
       <div className='md:col-span-6 flex flex-col gap-3'>
         <div className='flex flex-col gap-2'>
           <p className='text-sm md:text-[16px]'>
-            Remove &quot;A&quot;. 155 Prince Ade...
+          155 Prince Ade Odedina Street,
           </p>
           <p className='text-sm md:text-[16px]'>
             Victoria Island 101244, Lagos.

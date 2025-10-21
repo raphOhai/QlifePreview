@@ -37,7 +37,7 @@ export const FAQ = ({ leadingText }: { leadingText?: string }) => {
 
                 <div className='flex flex-col gap-4 md:gap-6 lg:gap-7'>
                     <h1 className='text-[#00186B] text-2xl md:text-3xl lg:text-[40px] font-weight-[500] leading-tight md:leading-[40px] lg:leading-[54px]'>
-                        {leadingText || 'Have any questions? We got you. Check out some of our FAQ&apos;s'}
+                        {leadingText || 'Have any questions? We got you. Check out some of our FAQs'}
                     </h1>
                     <p className='text-[#0B0A0B] text-sm md:text-base lg:text-[16px] font-weight-[400]'>
                         Curious to learn more about healthcare that combines personalized attention with clinical excellence? We have the answers to our customers&apos; frequently asked questions here.
