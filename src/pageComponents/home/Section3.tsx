@@ -12,9 +12,9 @@ const Section3 = () => {
                             <h2 className='text-2xl md:text-3xl lg:text-[40px] font-weight-[400] leading-tight lg:leading-[56px] text-[#00186B]'>
                                 Committed to unrivalled and exceptional patient-centred care that meets modern healthcare excellence.
                             </h2>
-                            <p className='text-sm md:text-base lg:text-[16px] font-weight-[400] leading-relaxed lg:leading-[24px]'>
+                            {/* <p className='text-sm md:text-base lg:text-[16px] font-weight-[400] leading-relaxed lg:leading-[24px]'>
                                 Our design philosophy isn&apos;t just about aesthetics; it&apos;s about creating meaningful connections between your brand and your customers. That&apos;s why, beyond delivering world-class.
-                            </p>
+                            </p> */}
                         </div>
                     </div>
                     <div className="md:col-span-6">
