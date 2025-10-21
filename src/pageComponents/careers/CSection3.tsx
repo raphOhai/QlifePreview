@@ -10,8 +10,8 @@ export const CSection3 = () => {
                 </div>
                 <div className='md:col-span-6 relative h-[320px] md:h-auto'>
                     <div className='relative h-[320px] md:h-[420px]'>
-                        <Image src='/careers/3.webp' alt='Careers' width={2000} height={2000} className='w-1/2 h-[280px] md:h-[387px] aspect-106/129 object-cover  absolute top-6 md:top-75 left-0' />
-                        <Image src='/careers/4.webp' alt='Careers' width={2000} height={2000} className='w-1/2 h-[280px] md:h-[387px] aspect-106/129 object-cover  absolute bottom-6 md:bottom-75 right-0' />
+                        <Image src='/careers/3.webp' alt='Careers' width={2000} height={2000} className='w-1/2 h-[280px] md:h-[387px] aspect-106/129 object-cover  absolute top-6 md:top-75 left-0 border-b-[5px] md:border-b-[10px] border-[#FFF16F]' />
+                        <Image src='/careers/4.webp' alt='Careers' width={2000} height={2000} className='w-1/2 h-[280px] md:h-[387px] aspect-106/129 object-cover  absolute bottom-6 md:bottom-[-650] right-0 border-b-[5px] md:border-b-[10px] border-[#FFF16F]' />
                     </div>
                 </div>
 

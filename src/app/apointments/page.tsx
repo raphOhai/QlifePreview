@@ -6,7 +6,7 @@ export default function page() {
   return (
     <div  className='max-w-[1920px] mx-auto w-full' >
         <ApointmentRoot />
-        <FAQ/>  
+        <FAQ leadingText='Question about your appointment?'/>  
     </div>
   )
 }

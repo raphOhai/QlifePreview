@@ -5,10 +5,10 @@ export const CSection2 = () => {
     return (
         <div className='space-y-1'>
             <div className='grid grid-cols-1 md:grid-cols-12 gap-6 md:gap-4'>
-                <div className='hidden md:block md:col-span-4'>
+                <div className='hidden md:block md:col-span-3'>
 
                 </div>
-                <div className='md:col-span-8'>
+                <div className='md:col-span-9'>
                     <div className='py-12 md:py-16 lg:py-[96px] px-4 md:px-8 lg:px-[48px] space-y-8 md:space-y-10'>
                         <h1 className='text-base md:text-lg lg:text-[20px] font-weight-[400] leading-[24px]'>
                             Why join us

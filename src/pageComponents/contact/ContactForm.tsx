@@ -102,7 +102,7 @@ const ContactFormX = () => {
                         render={({ field }) => (
                             <FormItem className='space-y-1'>
                                 <FormLabel className='text-[14px] font-weight-[400] leading-[24px] text-[#707070]'>
-                                    Email
+                                    Email address
                                 </FormLabel>
                                 <FormControl>
                                     <Input
@@ -144,7 +144,7 @@ const ContactFormX = () => {
                         render={({ field }) => (
                             <FormItem className='space-y-1'>
                                 <FormLabel className='text-[14px] font-weight-[400] leading-[24px] text-[#707070]'>
-                                    Message
+                                    Please tell us the reason you for contacting us
                                 </FormLabel>
                                 <FormControl>
                                     <Textarea
@@ -162,7 +162,7 @@ const ContactFormX = () => {
                         type="submit"
                         className='bg-[#00186B] text-white p-[24px] rounded-[6px] w-full hover:bg-[#00186B]/90'
                     >
-                        Submit
+                        Send Message
                     </Button>
                 </form>
             </Form>
@@ -192,39 +192,6 @@ const ContactCopy = () => {
             </div>
 
 
-            <div className='space-y-2 md:space-y-3'>
-                <h1 className='text-xl md:text-2xl lg:text-[24px] font-weight-[400] leading-tight lg:leading-[32px] text-[#00186B]'>
-                    Our Location
-                </h1>
-                <p className='text-sm md:text-base lg:text-[16px] font-weight-[400] leading-relaxed lg:leading-[24px] text-[#222]'>
-                    We are conveniently located and easily accessible for patients across the city.
-                </p>
-                <div className='space-y-3 md:space-y-4'>
-                    <h1 className='text-base md:text-lg lg:text-[20px] font-weight-[400] leading-relaxed lg:leading-[24px] text-[#222] w-full md:max-w-[80%] lg:max-w-[70%]'>
-                        155A Prince Ade Odedina Street,
-                        Off Sinari Daranijo, Victoria Island 101244,
-                        Lagos, Nigeria
-                    </h1>
-                </div>
-
-                <p className='text-xs md:text-sm lg:text-[16px] font-weight-[400] leading-relaxed lg:leading-[24px] text-[#707070]'>
-                    Access Ajose Adeogun from Eko Hotel round about, make a second right turn onto Younis Bashorun (by Haliburton after Zenith Bank HQ) then a second left unto Sinari Daranijo. Prince Ade Odedina is the first street on the right. We are at 155A Prince Ade Odedina Street.
-                </p>
-            </div>
-
-            <div className='space-y-2 md:space-y-3'>
-                <h1 className='text-xl md:text-2xl lg:text-[24px] font-weight-[400] leading-tight lg:leading-[32px] text-[#00186B]'>
-                    Email Us
-                </h1>
-                <p className='text-sm md:text-base lg:text-[16px] font-weight-[400] leading-relaxed lg:leading-[24px] text-[#222]'>
-                    Send us a message and our team will respond promptly to your inquiry.
-                </p>
-                <div className='space-y-3 md:space-y-4'>
-                    <h1 className='text-base md:text-lg lg:text-[20px] font-weight-[400] leading-relaxed lg:leading-[24px] text-[#222]'>
-                        customercare@qlifefamilyclinic.com
-                    </h1>
-                </div>
-            </div>
 
             <div className='space-y-2 md:space-y-3'>
                 <h1 className='text-xl md:text-2xl lg:text-[24px] font-weight-[400] leading-tight lg:leading-[32px] text-[#00186B]'>
@@ -242,6 +209,47 @@ const ContactCopy = () => {
                     </h1>
                 </div>
             </div>
+
+
+
+            <div className='space-y-2 md:space-y-3'>
+                <h1 className='text-xl md:text-2xl lg:text-[24px] font-weight-[400] leading-tight lg:leading-[32px] text-[#00186B]'>
+                    Email Us
+                </h1>
+                <p className='text-sm md:text-base lg:text-[16px] font-weight-[400] leading-relaxed lg:leading-[24px] text-[#222]'>
+                    Send us a message and our team will respond promptly to your inquiry.
+                </p>
+                <div className='space-y-3 md:space-y-4'>
+                    <h1 className='text-base md:text-lg lg:text-[20px] font-weight-[400] leading-relaxed lg:leading-[24px] text-[#222]'>
+                        customercare@qlifefamilyclinic.com
+                    </h1>
+                </div>
+            </div>
+
+
+            <div className='space-y-2 md:space-y-3'>
+                <h1 className='text-xl md:text-2xl lg:text-[24px] font-weight-[400] leading-tight lg:leading-[32px] text-[#00186B]'>
+                    Our Location
+                </h1>
+                <p className='text-sm md:text-base lg:text-[16px] font-weight-[400] leading-relaxed lg:leading-[24px] text-[#222]'>
+                    We are conveniently located and easily accessible for patients across the city.
+                </p>
+                <div className='space-y-3 md:space-y-4'>
+                    <h1 className='text-base md:text-lg lg:text-[20px] font-weight-[400] leading-relaxed lg:leading-[24px] text-[#222] w-full md:max-w-[80%] lg:max-w-[70%]'>
+                        155 Prince Ade Odedina Street,
+                        Off Sinari Daranijo, Victoria Island 101244,
+                        Lagos, Nigeria
+                    </h1>
+                </div>
+
+                <p className='text-xs md:text-sm lg:text-[16px] font-weight-[400] leading-relaxed lg:leading-[24px] text-[#707070]'>
+                    Access Ajose Adeogun from Eko Hotel round about, make a second right turn onto Younis Bashorun (by Haliburton after Zenith Bank HQ) then a second left unto Sinari Daranijo. Prince Ade Odedina is the first street on the right. We are at 155A Prince Ade Odedina Street.
+                </p>
+            </div>
+
+
+
+
 
         </div>
 
