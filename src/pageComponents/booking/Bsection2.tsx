@@ -2,6 +2,7 @@ import React from 'react'
 import Image from 'next/image'
 
 import Link from 'next/link'
+import { BookingArt } from '../svgs/booking'
 
 export const BSection2 = () => {
     return (
@@ -37,6 +38,7 @@ export const BSection2 = () => {
                 </div>
 
             </div>
+
 
         </div>
     )
