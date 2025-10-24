@@ -6,9 +6,8 @@ import Link from 'next/link'
 export const BSection2 = () => {
     return (
 
-        <div className='space-y-10 md:space-y-12 lg:space-y-15'>
-
-            <div className='py-12 md:py-16 lg:py-[96px] px-4 md:px-8 lg:px-[48px] space-y-6 md:space-y-10 w-full md:w-2/3 lg:w-1/2'>
+        <div className='space-y-6 md:space-y-12 lg:space-y-15'>
+            <div className='pt-8 md:pt-10 lg:pt-16 pb-12 md:pb-16 lg:pb-[96px] px-4 md:px-8 lg:px-[48px] space-y-6 md:space-y-10 w-full md:w-2/3 lg:w-1/2'>
                 <h1 className='text-[#00186B] text-base md:text-lg lg:text-[20px] font-weight-[500] leading-[32px] md:leading-[40px] lg:leading-[56px]'>
                     Guided care with confidence
                 </h1>

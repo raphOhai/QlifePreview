@@ -20,8 +20,8 @@ const Section3 = () => {
                     <div className="md:col-span-6">
                         <div className='flex flex-col gap-3 md:gap-4'>
                             <Cards svg={1} title="Our Culture" description="When you need care, we act quickly and carefully. From accurate diagnoses to personalized treatment plans, we provide you the care and support you need to restore your health quickly and safely." />
-                            <Cards svg={2} title="Our Culture" description="When you need care, we act quickly and carefully. From accurate diagnoses to personalized treatment plans, we provide you the care and support you need to restore your health quickly and safely." />
-                            <Cards svg={3} title="Our Culture" description="When you need care, we act quickly and carefully. From accurate diagnoses to personalized treatment plans, we provide you the care and support you need to restore your health quickly and safely." />
+                            <Cards svg={2} title="Our People" description="When you need care, we act quickly and carefully. From accurate diagnoses to personalized treatment plans, we provide you the care and support you need to restore your health quickly and safely." />
+                            <Cards svg={3} title="State-of-the-art equipment" description="When you need care, we act quickly and carefully. From accurate diagnoses to personalized treatment plans, we provide you the care and support you need to restore your health quickly and safely." />
                         </div>
                     </div>
                 </div>

@@ -3,7 +3,7 @@ import Image from 'next/image'
 
 export const BHero = () => {
     return (
-        <div className='py-12 md:py-16 lg:py-[96px] px-4 md:px-8 lg:px-[48px] space-y-8 md:space-y-12 lg:space-y-15'>
+        <div className='py-12 md:py-16 lg:py-[96px] px-4 md:px-8 lg:px-[48px] space-y-8 md:space-y-12 lg:space-y-15 pb-8 md:pb-10 lg:pb-16'>
             <h1 className='text-base md:text-lg lg:text-[20px] font-weight-[500] leading-normal md:leading-[52px]  w-full md:max-w-[80%]'>Booking</h1>
             <div className='grid grid-cols-1 md:grid-cols-12 gap-4'>
                 <div className='md:col-span-6'>
