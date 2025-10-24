@@ -28,10 +28,9 @@ export const BSection2 = () => {
 
                 </div>
                 <div className='md:col-span-8 space-y-4 md:space-y-2'>
-                <BookingCard link='/booking/canada' image='/booking/maps/1.webp' title='  Canada Visa Medical Examination' description='We offer full medical assessments for Canadian visa applicants. Our staff ensures all requirements are met, giving you confidence in your application.     ' aspectRatio='aspect-23/13' />
-                    <BookingCard link='/booking/uk' image='/booking/maps/2.webp' title='UK Visa Medical Examination ' description='We provide thorough medical assessments to meet UK visa requirements. Our team ensures your evaluation is completed efficiently and professionally.' aspectRatio='aspect-23/35' />
-
-                    <div className='mt-0 md:mt-[-200px]'>
+                <BookingCard link='/booking/canada' image='/booking/maps/2.webp' title='  Canada Visa Medical Examination' description='We offer full medical assessments for Canadian visa applicants. Our staff ensures all requirements are met, giving you confidence in your application.     ' aspectRatio='aspect-23/13' />
+                    <BookingCard link='/booking/uk' image='/booking/maps/1.webp' title='UK Visa Medical Examination ' description='We provide thorough medical assessments to meet UK visa requirements. Our team ensures your evaluation is completed efficiently and professionally.' aspectRatio='aspect-23/60' />
+                    <div className='mt-0 md:mt-[-50px]'>
                     <BookingCard link='/booking/us' image='/booking/maps/3.webp' title='US Visa Medical Examination' description='Our clinic conducts all necessary examinations for US visa applicants. You can trust us to guide you through the process smoothly and accurately.' aspectRatio='aspect-1/1' />
                     </div>
 

@@ -13,7 +13,7 @@ const page = () => {
         <TCSection2 />
         <TcSection3 />
         <FAQ />
-        <CTA title='Stay protected, stay healthy. Take control of your health today.' description='Book an appointment with our experienced clinicians and access personalized healthcare solutions. At QLife Travel Clinic, we make it simple to prioritize your well-being. Start your journey to better health today.' buttonText='Book Your Travel Consultation' />
+        <CTA title='Ready to invest in your health?' description='Experience quality primary healthcare, dedicated to delivering exceptional, personalised care for you and your family.' buttonText='Book an appointment' />
       </div>
     </div>
   )

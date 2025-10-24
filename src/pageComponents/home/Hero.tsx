@@ -4,7 +4,7 @@ import React from 'react'
 export const Hero = () => {
  
     return (
-        <div className='h-[min(85vh,1000px)] bg-cover bg-center bg-no-repeat relative overflow-hidden'
+        <div className='h-[min(78vh,1000px)] bg-cover bg-center bg-no-repeat relative overflow-hidden'
             style={{ backgroundImage: "url('/hero_background.webp')" }}>
             <div
                 className='absolute left-0 w-full h-full'
@@ -17,9 +17,9 @@ export const Hero = () => {
 
 const HeroContent = () => {
     return (
-        <div className='absolute bottom-0 left-0 w-full z-10 p-4 md:p-6 lg:p-8'>
+        <div className='absolute bottom-20 left-0 w-full z-10 p-4 md:p-6 lg:p-8'>
             <div className='max-w-[1920px] mx-auto'>
-                <div className='flex flex-col gap-3 md:gap-4'>
+                <div className='space-y-10 md:gap-4'>
                     <h1 className='text-white text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-weight-[400] color-[#F8F4EB]' style={{ fontFamily: 'var(--font-hornbill)' }}>
                         Exceptional Care. Healthcare Reimagined. Your First Step to Better Health
                     </h1>

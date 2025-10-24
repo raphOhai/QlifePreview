@@ -12,7 +12,7 @@ const page = () => {
         <WCSection2 />
         <WCSection3 />
         <FAQ />
-        <CTA title='Achieve balance and long-term vitality. Invest in your health today' description='Prevention is the best medicine. At QLife Wellness Clinic, we make it easy to take charge of your health before issues arise. Schedule your screening today and build the foundation for a healthier future.' buttonText='Book a Wellness Screening' />
+        <CTA title='Ready to invest in your health?' description='Experience quality primary healthcare, dedicated to delivering exceptional, personalised care for you and your family.' buttonText='Book an appointment' />
       </div>
     </div>
   )
