@@ -139,3 +139,65 @@ This project is open source and available under the [MIT License](LICENSE).
 ## 🤝 Contributing
 
 Contributions are welcome! Please feel free to submit a Pull Request.
+
+# Qlife Preview
+
+## React Query Integration
+
+This project uses React Query (@tanstack/react-query) for data fetching and state management.
+
+### Available Hooks
+
+#### 1. `useApi` - GET Requests
+```typescript
+import { useApi } from '@/hooks/useApi'
+
+const { data, isLoading, error, refetch } = useApi<User[]>('/api/users')
+```
+
+#### 2. `usePost` - POST Requests
+```typescript
+import { usePost } from '@/hooks/useApi'
+
+const postMutation = usePost()
+
+// Use it in a function
+const handleSubmit = () => {
+  postMutation.mutate(
+    { 
+      endpoint: '/api/users', 
+      data: { name: 'John' } 
+    },
+    {
+      onSuccess: () => console.log('Success!'),
+      onError: (error) => console.error(error)
+    }
+  )
+}
+```
+
+#### 3. `usePut` - PUT Requests
+```typescript
+import { usePut } from '@/hooks/useApi'
+
+const putMutation = usePut()
+putMutation.mutate({
+  endpoint: '/api/users/123',
+  data: { name: 'Jane' }
+})
+```
+
+#### 4. `useDelete` - DELETE Requests
+```typescript
+import { useDelete } from '@/hooks/useApi'
+
+const deleteMutation = useDelete()
+deleteMutation.mutate('/api/users/123')
+```
+
+### Environment Variables
+
+Make sure to set your base URL in `.env.local`:
+```
+NEXT_PUBLIC_BASE_URL=https://your-api.com
+```

@@ -3,3 +3,9 @@ export interface Applicant {
     dateOfBirth: string
     gender: string
 }
+
+export interface NumberOfApplicants {
+    adults: number
+    children: number
+    infants: number
+}

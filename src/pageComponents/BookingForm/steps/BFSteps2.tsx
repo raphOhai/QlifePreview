@@ -1,9 +1,9 @@
-import { CalendarRange } from '@/components/customCallenderRange'
+import { Calendar } from '@/components/ui/calendar'
 import React from 'react'
 import { useBookingStore } from '@/store/bookingStore'
 
 export const BFSteps2 = () => {
-    const { dateRange, setDateRange } = useBookingStore()
+    const { selectedDate, setSelectedDate } = useBookingStore()
 
     return (
         <div className='space-y-6 md:space-y-8 lg:space-y-10'>
@@ -31,12 +31,12 @@ export const BFSteps2 = () => {
                         </div>
 
                         <div className='w-full flex justify-center mt-18'>
-                            <CalendarRange
-                                mode="range"
+                            <Calendar
+                                mode="single"
                                 defaultMonth={new Date()}
                                 numberOfMonths={2}
-                                selected={dateRange}
-                                onSelect={setDateRange}
+                                selected={selectedDate}
+                                onSelect={setSelectedDate}
                                 className="rounded-lg border shadow-sm [--cell-size:theme(spacing.12)] scale-110"
                                 classNames={{
                                     months: "flex flex-col gap-6"

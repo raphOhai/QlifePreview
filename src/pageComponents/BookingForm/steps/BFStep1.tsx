@@ -4,12 +4,15 @@ import { RootCopy } from './components/RootCopy'
 import { Input } from '@/components/ui/input'
 import { Button } from '@/components/ui/button'
 import { useBookingStore } from '@/store/bookingStore'
+import { Notes } from './components/Requirements'
+import { NumberOfPatients } from './components/NumberOfPatients'
 
 export const BFStep1 = () => {
     return (
         <div className='grid grid-cols-1 md:grid-cols-12 gap-6 md:gap-8 lg:gap-10'>
-            <div className='md:col-span-6'>
+            <div className='md:col-span-6 space-y-10'>
                 <RootCopy />
+                <Notes />
             </div>
             <div className='md:col-span-6'>
                 <BFStep1Form />
@@ -58,12 +61,13 @@ const BFStep1Form = () => {
                     <Input className='mt-2' />
                 </div>
 
-                <div className='space-y-1 md:space-y-2'>
+                {/* <div className='space-y-1 md:space-y-2'>
                     <p className='text-sm md:text-[14px] font-weight-[500] leading-relaxed lg:leading-[24px] text-[#222]'>
                         Select number of applicants
                     </p>
                     <Input className='mt-2' />
-                </div>
+                </div> */}
+                <NumberOfPatients />
 
                 <Button
                     onClick={() => useBookingStore.getState().setBookingStep(2)}
